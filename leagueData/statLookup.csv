@@ -1,0 +1,144 @@
+0,Pass Attempts
+1,Completions
+2,Incompletions
+3,Every 1 passing yard
+4,TD Pass
+5,Every 5 passing yards
+6,Every 10 passing yards
+7,Every 20 passing yards
+8,Every 25 passing yards
+9,Every 50 passing yards
+10,Every 100 passing yards
+11,Every 5 completions
+12,Every 10 completions
+13,Every 5 incompletions
+14,Every 10 incompletions
+15,40+ yard TD pass bonus
+16,50+ yard TD pass bonus
+17,300-399 yard passing game
+18,400+ yard passing game
+19,2 pt. Passing Conversion
+20,Interceptions Thrown
+21,Completion Percentage
+22,Passing Yards (raw)
+23,Rushing Attempts
+24,Rushing Yards
+25,TD Rush
+26,2 pt. Rushing Conversion
+27,Every 5 rushing yards
+28,Every 10 rushing yards
+29,Every 20 rushing yards
+30,Every 25 rushing yards
+31,Every 50 rushing yards
+32,Every 100 rushing yards
+33,Every 5 rushing attempts
+34,Every 10 rushing attempts
+35,40+ yard TD rush bonus
+36,50+ yard TD rush bonus
+37,100-199 yard rushing game
+38,200+ yard rushing game
+39,Yards per Rush
+40,Rushing Yards (raw)
+41,Receptions
+42,Receiving Yards
+43,TD Reception
+44,2 pt. Receiving Conversion
+45,40+ yard TD rec bonus
+46,50+ yard TD rec bonus
+47,Every 5 receiving yards
+48,Every 10 receiving yards
+49,Every 20 receiving yards
+50,Every 25 receiving yards
+51,Every 50 receiving yards
+52,Every 100 receiving yards
+53,Receptions
+54,Every 5 receptions
+55,Every 10 receptions
+56,100-199 yard receiving game
+57,200+ yard receiving game
+58,Receiving Target
+59,YAC
+60,Yards per Reception
+61,Receiving Yards (raw)
+62,Total 2 pt. Conversions
+63,Unknown
+64,Sacks
+65,Unknown
+66,Unknown
+67,Unknown
+68,Total Fumbles
+69,Unknown
+70,Unknown
+71,Unknown
+72,Fumbles Lost
+73,Unknown
+74,FG Made (50+ yards)
+75,FG Attempted (50+ yards)
+76,FG Missed (50+ yards)
+77,FG Made (40-49 yards)
+78,FG Attempted (40-49 yards)
+79,FG Missed (40-49 yards)
+80,FG Made (0-39 yards)
+81,FG Attempted (0-39 yards)
+82,FG Missed (0-39 yards)
+83,Total FG Made
+84,Total FG Attempted
+85,Total FG Missed
+86,Each PAT Made
+87,Each PAT Attempted
+88,Each PAT Missed
+89,0 Points Allowed
+90,2-6 Points Allowed
+91,7-13 Points Allowed
+92,14-17 Points Allowed
+93,Blocked Punt or FG return for TD
+94,Unknown
+95,Each Interception
+96,Each Fumble Recovered
+97,"Blocked Punt, PAT or FG"
+98,Safety
+99,Each Sack
+100,Unknown
+101,Kickoff Return TD
+102,Punt Return TD
+103,Interception Return TD
+104,Fumble Return TD
+105,Unknown
+106,Unknown
+107,Tackles Assisted
+108,Tackles Solo
+109,Total Tackles
+110,Unknown
+111,Unknown
+112,Each Stuff (Tackle for loss)
+113,Passes Defensed
+114,Kickoff Return Yards
+115,Punt Return Yards
+116,Every 10 kickoff return yards
+117,Every 25 kickoff return yards
+118,Every 10 punt return yards
+119,Every 25 punt return yards
+120,Every Point Allowed
+121,18-21 Points Allowed
+122,22-27 Points Allowed
+123,28-34 Points Allowed
+124,35-45 Points Allowed
+125,46+ Points Allowed
+126,Every Point Allowed
+127,Every Yard Allowed
+128,Less than 100 total yards allowed
+129,100-199 total yards allowed
+130,200-299 total yards allowed
+131,300-349 total yards allowed
+132,350-399 total yards allowed
+133,400-449 total yards allowed
+134,450-499 total yards allowed
+135,500-549 total yards allowed
+136,500+ total yards allowed
+137,Total Yards
+155,Unknown
+156,Unknown
+157,Unknown
+160,Unknown
+206,Unknown
+209,Unknown
