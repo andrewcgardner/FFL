@@ -4,7 +4,7 @@ import pandas as pd
 import json
 from pandas.io.json import json_normalize
 
-targetFile = "C:\workspace\python\projects\\ffl\json\\schedule.txt"
+targetFile = "C:\\workspace\\python\\projects\\ESPN\\FFL\\leagueData\\leagueSchedules2018.txt"
 with open(targetFile, 'r') as tF:
     data = json.load(tF)
 
@@ -19,7 +19,8 @@ for matchup in matchup_count:
 print(ids)
 """
 
-weeks = list(range(0,data['leagueSchedule']['regularSeasonMatchupPeriodCount'])) # replaced hardcoded 13 
+#weeks = list(range(0,data['leagueSchedule']['regularSeasonMatchupPeriodCount'])) # replaced hardcoded 13 
+weeks = list(range(0,17))
 for week in weeks:
     if data['leagueSchedule']['scheduleItems'][week]['matchups'][0]['outcome'] == 0:
         latest_week = week
@@ -37,10 +38,30 @@ for week in range(0,latest_week):
     #print(ids)
     full_season[week + 1] = ids
 
-print(full_season)
+for f in full_season:
+    print(full_season[f])
 
+# Using Schedule, look at all schedule items present.
+scheduleItems = []
+weeksCompleted = []
+for item in data['leagueSchedule']['scheduleItems']:
+    scheduleItems.append(item['matchupPeriodId'])
+    outcomes = 0
+    for sub in item['matchups']:
+#       print(sub['outcome'],'\n')
+        outcomes += sub['outcome']
+    if outcomes > 0:
+        weeksCompleted.append(item['matchupPeriodId'])
+        
+"""
+for period in scheduleItems:
+    if data['leagueSchedule']['scheduleItems'][period - 1]['matchups'][0]['outcome'] == 0:
+        print(data['leagueSchedule']['scheduleItems'][period - 1]['matchups'][0]['homeTeamScores'])
+        scheduleItems.remove(period)
+"""     
 
-
+print(scheduleItems)
+print(weeksCompleted)
 
 """
 weeks = list(range(0,13))
