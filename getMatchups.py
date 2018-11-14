@@ -19,7 +19,7 @@ for matchup in matchup_count:
 print(ids)
 """
 
-weeks = list(range(0,13)) # can this be replaced by 
+weeks = list(range(0,data['leagueSchedule']['regularSeasonMatchupPeriodCount'])) # replaced hardcoded 13 
 for week in weeks:
     if data['leagueSchedule']['scheduleItems'][week]['matchups'][0]['outcome'] == 0:
         latest_week = week
