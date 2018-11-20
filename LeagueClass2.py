@@ -2,6 +2,7 @@ import pandas as pd
 import requests
 import json
 import getStats
+from utils import connections
 
 class League(object):
     def __init__(self,leagueId,seasonId):
@@ -11,20 +12,19 @@ class League(object):
     def basicAPI(self,endpoint):
     
     # .txt files to test at work
-    #    targetFile = "C:\\workspace\\python\\projects\\ESPN\\FFL\\leagueData\\" + endpoint + str(self.seasonId) + ".txt"
-    #    with open(targetFile, 'r') as tF:
-    #        return json.load(tF)
+        targetFile = "C:\\workspace\\python\\projects\\ESPN\\FFL\\leagueData\\" + endpoint + str(self.seasonId) + ".txt"
+        with open(targetFile, 'r') as tF:
+            return json.load(tF)
     
     # API Call for finalized process
         
-        url = "http://games.espn.com/ffl/api/v2/" + endpoint
-        params = {
-            'leagueId': self.leagueId
-            ,'seasonId': self.seasonId
-        }
+    #    url = "http://games.espn.com/ffl/api/v2/" + endpoint
+    #    params = {
+    #        'leagueId': self.leagueId
+    #        ,'seasonId': self.seasonId
+    #    }
         
-        return requests.get(url,params=params,cookies=None).json()
-    
+    #    return requests.get(url,params=params,cookies=None).json()    
  
 class Season(object):
     def __init__(self,League):
@@ -50,26 +50,33 @@ class Season(object):
             for d in teams['teams'][index]['owners']:
                 ownerList = [
                     self.seasonId
+                    ,teams['teams'][index]['division']['divisionId']
+                    ,teams['teams'][index]['division']['divisionName']
                     ,teams['teams'][index]['teamId']
-                    ,d['firstName']
-                    ,d['lastName']
+                    ,teams['teams'][index]['teamAbbrev']
+                    ,teams['teams'][index]['teamLocation']
+                    ,teams['teams'][index]['teamNickname']
+                    ,d['ownerId']
                     ,d['firstName'] + ' ' + d['lastName']
                     ,d['primaryOwner']
                 ]
                 
                 teamList.append(ownerList)
 
-        df = pd.DataFrame(teamList, columns=['season','teamId','firstName','lastName','fullName','isPrimary'])
+        df = pd.DataFrame(teamList, columns = ['seasonId','divisionId','divisionName'
+                                        ,'teamId','teamAbbrev','teamLocation','teamNickname'
+                                        ,'ownerId','fullName','isPrimary'])
 
         primary = df[df['isPrimary']]
         secondary = df[df['isPrimary'] == False]
-        outputcols = ['season','teamId','firstName','lastName','fullName']
+        output_pri = [col for col in primary if col != 'isPrimary']
+        output_sec = ['seasonId','teamId','ownerId','fullName']
 
         final = pd.merge(
-            primary[outputcols]
-            ,secondary[outputcols]
+            primary[output_pri]
+            ,secondary[output_sec]
             ,how='left'
-            ,on=['season','teamId']
+            ,on=['seasonId','teamId']
             ,suffixes=('','.secondary')
             )
         return final
@@ -84,8 +91,7 @@ class Week(object):
         self.leagueId = Season.leagueId
         self.seasonId = Season.seasonId
         self.scoringPeriodId = scoringPeriodId
-        #self.matchups = []
-    
+            
     def getMatchups(self,schedule):
         ids = []
         matchup_index = self.scoringPeriodId - 1
@@ -114,30 +120,32 @@ class Matchup(object):
         return box
 
     def boxscoreAPI(self,homeTeamId):
-    #    targetFile = "C:\\workspace\\python\\projects\\ESPN\\FFL\\boxscores\\" \
-    #        + str(self.seasonId) \
-    #        + "-W" + str(self.scoringPeriodId) \
-    #       + "-T" + str(homeTeamId) \
-    #       + ".txt"
-    #    with open(targetFile, 'r') as tF:
-    #        return json.load(tF)
+        targetFile = "C:\\workspace\\python\\projects\\ESPN\\FFL\\boxscores\\" \
+            + str(self.seasonId) \
+            + "-W" + str(self.scoringPeriodId) \
+           + "-T" + str(homeTeamId) \
+           + ".txt"
+        with open(targetFile, 'r') as tF:
+            return json.load(tF)
     # API Call for finalized process
        
-        url = "http://games.espn.com/ffl/api/v2/boxscore"
-        params = {
-            'leagueId': self.leagueId
-            ,'seasonId': self.seasonId
-            ,'scoringPeriodId': self.scoringPeriodId
-            ,'teamId': homeTeamId
-        }
+    #    url = "http://games.espn.com/ffl/api/v2/boxscore"
+    #    params = {
+    #        'leagueId': self.leagueId
+    #        ,'seasonId': self.seasonId
+    #        ,'scoringPeriodId': self.scoringPeriodId
+    #        ,'teamId': homeTeamId
+    #    }
     
-        return requests.get(url,params=params,cookies=None).json()
+    #    return requests.get(url,params=params,cookies=None).json()
     
 
 class Model(object):
     def __init__(self,leagueId,seasonId):
         self.leagueId = leagueId
         self.seasonId = seasonId
+
+        ods = connections.SQLConnect()
 
         L = League(self.leagueId,self.seasonId)
         settings = L.basicAPI('leagueSettings')
@@ -147,15 +155,34 @@ class Model(object):
         S = Season(L)
         weeks = S.weeksComplete(schedule)
         managers = S.getManagers(teams)
-
-        W = Week(S,1)
-        matchups = W.getMatchups(schedule)
-
-        M = Matchup(W)
-        box_data = M.getBoxscore(1)
         
-        #print(box_data.head(5))
-        box_data.to_csv("C:\\workspace\\python\\projects\\ESPN\\FFL\\boxTest.csv")
+        #managers.to_sql('temp_acg_managers',ods,schema='SbPowerUser',if_exists='append')
+
+        for week_num in weeks:
+            W = Week(S,week_num)
+            matchups = W.getMatchups(schedule)
+
+            for match in matchups:
+                M = Matchup(W)
+                box_data = M.getBoxscore(match[0]).reset_index() # columns were getting lost in multi-index
+                
+                # additional transformations:
+                box_data = pd.merge(left=box_data
+                                    ,right=managers
+                                            #,how='left'
+                                            ,on=['teamId','seasonId'])
+                
+                #box_data.to_csv("C:\\workspace\\python\\projects\\ESPN\\FFL\\merged.csv")
+                box_data = pd.merge(left=box_data
+                                    ,right=managers
+                                            #,how='left'
+                                            ,left_on=['opponentTeamId','seasonId']
+                                            ,right_on=['teamId','seasonId']
+                                            ,suffixes=('','.opponent'))
+                #box_data.to_csv("C:\\workspace\\python\\projects\\ESPN\\FFL\\opponents.csv")
+                
+                box_data.to_sql('temp_acg_boxscores',ods,schema='SbPowerUser',if_exists='append')
+
 
 
 if __name__=='__main__':
