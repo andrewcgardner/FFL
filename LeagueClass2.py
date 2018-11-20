@@ -9,13 +9,14 @@ class League(object):
         self.seasonId = seasonId
     
     def basicAPI(self,endpoint):
+    
     # .txt files to test at work
-        targetFile = "C:\\workspace\\python\\projects\\ESPN\\FFL\\leagueData\\" + endpoint + str(self.seasonId) + ".txt"
-        with open(targetFile, 'r') as tF:
-            return json.load(tF)
+    #    targetFile = "C:\\workspace\\python\\projects\\ESPN\\FFL\\leagueData\\" + endpoint + str(self.seasonId) + ".txt"
+    #    with open(targetFile, 'r') as tF:
+    #        return json.load(tF)
     
     # API Call for finalized process
-    """    
+        
         url = "http://games.espn.com/ffl/api/v2/" + endpoint
         params = {
             'leagueId': self.leagueId
@@ -23,7 +24,7 @@ class League(object):
         }
         
         return requests.get(url,params=params,cookies=None).json()
-    """
+    
  
 class Season(object):
     def __init__(self,League):
@@ -84,6 +85,16 @@ class Week(object):
         self.seasonId = Season.seasonId
         self.scoringPeriodId = scoringPeriodId
         #self.matchups = []
+    
+    def getMatchups(self,schedule):
+        ids = []
+        matchup_index = self.scoringPeriodId - 1
+        for matchup in schedule['leagueSchedule']['scheduleItems'][matchup_index]['matchups']:
+            homeTeam = matchup['homeTeam']
+            awayTeam = matchup['awayTeam']
+            ids.append([homeTeam['teamId'],awayTeam['teamId']])
+
+        return ids
       
 
     def describe(self):
@@ -97,16 +108,21 @@ class Matchup(object):
         self.seasonId = Week.seasonId
         self.scoringPeriodId = Week.scoringPeriodId
 
+    def getBoxscore(self,homeTeamId):
+        box_json = self.boxscoreAPI(homeTeamId)
+        box = getStats.boxscores(box_json)
+        return box
+
     def boxscoreAPI(self,homeTeamId):
-        targetFile = "C:\\workspace\\python\\projects\\ESPN\\FFL\\boxscores\\" \
-            + str(self.seasonId) \
-            + "-W" + str(self.scoringPeriodId) \
-            + "-T" + str(homeTeamId) \
-            + ".txt"
-        with open(targetFile, 'r') as tF:
-            return json.load(tF)
+    #    targetFile = "C:\\workspace\\python\\projects\\ESPN\\FFL\\boxscores\\" \
+    #        + str(self.seasonId) \
+    #        + "-W" + str(self.scoringPeriodId) \
+    #       + "-T" + str(homeTeamId) \
+    #       + ".txt"
+    #    with open(targetFile, 'r') as tF:
+    #        return json.load(tF)
     # API Call for finalized process
-    """   
+       
         url = "http://games.espn.com/ffl/api/v2/boxscore"
         params = {
             'leagueId': self.leagueId
@@ -116,7 +132,7 @@ class Matchup(object):
         }
     
         return requests.get(url,params=params,cookies=None).json()
-    """
+    
 
 class Model(object):
     def __init__(self,leagueId,seasonId):
@@ -132,11 +148,14 @@ class Model(object):
         weeks = S.weeksComplete(schedule)
         managers = S.getManagers(teams)
 
-
-
         W = Week(S,1)
+        matchups = W.getMatchups(schedule)
+
+        M = Matchup(W)
+        box_data = M.getBoxscore(1)
         
-        print(managers)
+        #print(box_data.head(5))
+        box_data.to_csv("C:\\workspace\\python\\projects\\ESPN\\FFL\\boxTest.csv")
 
 
 if __name__=='__main__':

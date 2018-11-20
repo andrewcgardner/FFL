@@ -129,7 +129,7 @@ teams = 4 # setting static value for initial testing
 weeks = 2 # setting static value for initial testing
 
 #targetFile = "C:\\workspace\\python\\projects\\ffl\\new\\fullData\\box\\2018-W1-T1.txt"
-targetFile = 'C:\\workspace\\python\\projects\\ffl\\new\\fullData\\box\\2018-W' + str(weeks) + '-T' + str(teams) + '.txt'
+targetFile = 'C:\\workspace\\python\\projects\\ESPN\\FFL\\boxscores\\2018-W' + str(weeks) + '-T' + str(teams) + '.txt'
 
 with open(targetFile, 'r') as tF:
     data = json.load(tF)
