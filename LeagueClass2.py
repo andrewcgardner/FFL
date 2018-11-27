@@ -24,7 +24,20 @@ class League(object):
     #        ,'seasonId': self.seasonId
     #    }
         
-    #    return requests.get(url,params=params,cookies=None).json()    
+    #    return requests.get(url,params=params,cookies=None).json()
+    # 
+    def extendAPI(self,endpoint,**kwargs):
+        url = "http://games.espn.com/ffl/api/v2/" + endpoint
+        params = {
+            'leagueId': self.leagueId
+            ,'seasonId': self.seasonId
+        }
+        for key in ['scoringPeriodId','teamId']:
+            if key in kwargs:
+                params[key] = kwargs.get(key)
+        
+        return requests.get(url,params=params,cookies=None).json()
+        
  
 class Season(object):
     def __init__(self,League):
@@ -100,8 +113,7 @@ class Week(object):
             awayTeam = matchup['awayTeam']
             ids.append([homeTeam['teamId'],awayTeam['teamId']])
 
-        return ids
-      
+        return ids      
 
     def describe(self):
         print('LeagueID: ' + str(self.leagueId))
@@ -166,20 +178,17 @@ class Model(object):
                 M = Matchup(W)
                 box_data = M.getBoxscore(match[0]).reset_index() # columns were getting lost in multi-index
                 
-                # additional transformations:
+                # Joining Manager table for additional metadata:
                 box_data = pd.merge(left=box_data
                                     ,right=managers
-                                            #,how='left'
+                                            ,how='left'
                                             ,on=['teamId','seasonId'])
-                
-                #box_data.to_csv("C:\\workspace\\python\\projects\\ESPN\\FFL\\merged.csv")
                 box_data = pd.merge(left=box_data
                                     ,right=managers
-                                            #,how='left'
+                                            ,how='left'
                                             ,left_on=['opponentTeamId','seasonId']
                                             ,right_on=['teamId','seasonId']
                                             ,suffixes=('','.opponent'))
-                #box_data.to_csv("C:\\workspace\\python\\projects\\ESPN\\FFL\\opponents.csv")
                 
                 box_data.to_sql('temp_acg_boxscores',ods,schema='SbPowerUser',if_exists='append')
 
