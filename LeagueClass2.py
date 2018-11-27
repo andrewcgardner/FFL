@@ -2,7 +2,7 @@ import pandas as pd
 import requests
 import json
 import getStats
-from utils import connections
+#from utils import connections
 
 class League(object):
     def __init__(self,leagueId,seasonId):
@@ -113,13 +113,23 @@ class Week(object):
             awayTeam = matchup['awayTeam']
             ids.append([homeTeam['teamId'],awayTeam['teamId']])
 
-        return ids      
+        return ids
+
+    def parseProGames(self,json):
+        games = pd.DataFrame.from_dict(json['progames']['games'])
+        games['date'], games['time'] = games['gameDate'].str.split('T').str
+        games['time'] = games['time'].str.split('.').str[0]
+        games['gameDate'] = pd.to_datetime(games['date'] + ' ' + games['time'])
+        games.drop(['date','time','status'],axis=1,inplace=True)
+
+        return games      
 
     def describe(self):
         print('LeagueID: ' + str(self.leagueId))
         print('Season: ' + str(self.seasonId))
         print('Week: ' + str(self.scoringPeriodId))
 
+# CAN BE REMOVED WHEN .txt TESTING IS NO LONGER NECESSARY
 class Matchup(object):
     def __init__(self,Week):
         self.leagueId = Week.leagueId
@@ -135,8 +145,8 @@ class Matchup(object):
         targetFile = "C:\\workspace\\python\\projects\\ESPN\\FFL\\boxscores\\" \
             + str(self.seasonId) \
             + "-W" + str(self.scoringPeriodId) \
-           + "-T" + str(homeTeamId) \
-           + ".txt"
+            + "-T" + str(homeTeamId) \
+            + ".txt"
         with open(targetFile, 'r') as tF:
             return json.load(tF)
     # API Call for finalized process
@@ -157,26 +167,32 @@ class Model(object):
         self.leagueId = leagueId
         self.seasonId = seasonId
 
-        ods = connections.SQLConnect()
+        #ods = connections.SQLConnect()
 
         L = League(self.leagueId,self.seasonId)
-        settings = L.basicAPI('leagueSettings')
-        schedule = L.basicAPI('leagueSchedules')
-        teams = L.basicAPI('teams')
+        settings = L.extendAPI('leagueSettings')
+        schedule = L.extendAPI('leagueSchedules')
+        teams = L.extendAPI('teams')
 
         S = Season(L)
         weeks = S.weeksComplete(schedule)
         managers = S.getManagers(teams)
-        
-        #managers.to_sql('temp_acg_managers',ods,schema='SbPowerUser',if_exists='append')
 
+        #print(managers)
+        #managers.to_sql('temp_acg_managers',ods,schema='SbPowerUser',if_exists='append')
+        #box_json = self.extendAPI('boxscore',scoringPeriodId=self.scoringPeriodId,teamId=homeTeamId)
         for week_num in weeks:
             W = Week(S,week_num)
             matchups = W.getMatchups(schedule)
+            progames_json = L.extendAPI(endpoint='proGames',scoringPeriodId=week_num)
+            progames = W.parseProGames(progames_json)
 
             for match in matchups:
-                M = Matchup(W)
-                box_data = M.getBoxscore(match[0]).reset_index() # columns were getting lost in multi-index
+                box_json = L.extendAPI(endpoint='boxscore',scoringPeriodId=week_num,teamId=match[0])
+                box_data = getStats.boxscores(box_json).reset_index()
+                # Below to be used in .txt file testing
+                #M = Matchup(W)
+                #box_data = M.getBoxscore(match[0]).reset_index() # columns were getting lost in multi-index
                 
                 # Joining Manager table for additional metadata:
                 box_data = pd.merge(left=box_data
@@ -189,9 +205,8 @@ class Model(object):
                                             ,left_on=['opponentTeamId','seasonId']
                                             ,right_on=['teamId','seasonId']
                                             ,suffixes=('','.opponent'))
-                
-                box_data.to_sql('temp_acg_boxscores',ods,schema='SbPowerUser',if_exists='append')
-
+        print(box_data.head(5))
+                #box_data.to_sql('temp_acg_boxscores',ods,schema='SbPowerUser',if_exists='append')
 
 
 if __name__=='__main__':
