@@ -2,6 +2,7 @@ import pandas as pd
 import requests
 import json
 import getStats
+from sqlalchemy import create_engine
 #from utils import connections
 
 class League(object):
@@ -168,11 +169,17 @@ class Model(object):
         self.seasonId = seasonId
 
         #ods = connections.SQLConnect()
+        pgsql = create_engine('postgresql://postgres:granite@localhost:5432/espn')
 
         L = League(self.leagueId,self.seasonId)
-        settings = L.extendAPI('leagueSettings')
-        schedule = L.extendAPI('leagueSchedules')
-        teams = L.extendAPI('teams')
+        
+        #settings = L.extendAPI('leagueSettings')
+        #schedule = L.extendAPI('leagueSchedules')
+        #teams = L.extendAPI('teams')
+
+        settings = L.basicAPI('leagueSettings')
+        schedule = L.basicAPI('leagueSchedules')
+        teams = L.basicAPI('teams')
 
         S = Season(L)
         weeks = S.weeksComplete(schedule)
@@ -184,15 +191,15 @@ class Model(object):
         for week_num in weeks:
             W = Week(S,week_num)
             matchups = W.getMatchups(schedule)
-            progames_json = L.extendAPI(endpoint='proGames',scoringPeriodId=week_num)
-            progames = W.parseProGames(progames_json)
+            #progames_json = L.extendAPI(endpoint='proGames',scoringPeriodId=week_num)
+            #progames = W.parseProGames(progames_json)
 
             for match in matchups:
-                box_json = L.extendAPI(endpoint='boxscore',scoringPeriodId=week_num,teamId=match[0])
-                box_data = getStats.boxscores(box_json).reset_index()
+                #box_json = L.extendAPI(endpoint='boxscore',scoringPeriodId=week_num,teamId=match[0])
+                #box_data = getStats.boxscores(box_json).reset_index()
                 # Below to be used in .txt file testing
-                #M = Matchup(W)
-                #box_data = M.getBoxscore(match[0]).reset_index() # columns were getting lost in multi-index
+                M = Matchup(W)
+                box_data = M.getBoxscore(match[0]).reset_index() # columns were getting lost in multi-index
                 
                 # Joining Manager table for additional metadata:
                 box_data = pd.merge(left=box_data
@@ -205,8 +212,10 @@ class Model(object):
                                             ,left_on=['opponentTeamId','seasonId']
                                             ,right_on=['teamId','seasonId']
                                             ,suffixes=('','.opponent'))
-        print(box_data.head(5))
+        #print(box_data.head(5))
                 #box_data.to_sql('temp_acg_boxscores',ods,schema='SbPowerUser',if_exists='append')
+                #box_data.drop('index',axis=0,inplace=True)
+                box_data.to_sql('etl_api_boxscore_data',pgsql,schema='fantasyfootball',if_exists='append',index=False)
 
 
 if __name__=='__main__':
