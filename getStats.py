@@ -1,8 +1,5 @@
-import os
-from pathlib import Path
 import pandas as pd
 import numpy as np
-import json
 from pandas.io.json import json_normalize
 
 def parseBox(json):
@@ -88,7 +85,7 @@ def unmelt(row,targetVal):
     else:
         return np.nan
 
-def boxscores(data):
+def fullBox(data):
     full_box = pd.DataFrame()
 
     for n in range(0,len(data['boxscore']['teams'])):

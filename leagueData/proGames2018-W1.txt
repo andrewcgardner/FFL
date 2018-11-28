@@ -1,0 +1,171 @@
+{
+    "metadata": {
+        "defaults": {},
+        "serverDate": "2018-10-18T03:17:08.095Z"
+    },
+    "progames": {
+        "games": [
+            {
+                "awayProTeamId": 1,
+                "awayScore": 12,
+                "gameDate": "2018-09-07T00:55:00.000Z",
+                "gameId": 380906021,
+                "homeProTeamId": 21,
+                "homeScore": 18,
+                "period": 4,
+                "status": 3
+            },
+            {
+                "awayProTeamId": 23,
+                "awayScore": 21,
+                "gameDate": "2018-09-09T17:00:00.000Z",
+                "gameId": 380909005,
+                "homeProTeamId": 5,
+                "homeScore": 21,
+                "period": 5,
+                "status": 3
+            },
+            {
+                "awayProTeamId": 4,
+                "awayScore": 34,
+                "gameDate": "2018-09-09T17:00:00.000Z",
+                "gameId": 380909011,
+                "homeProTeamId": 11,
+                "homeScore": 23,
+                "period": 4,
+                "status": 3
+            },
+            {
+                "awayProTeamId": 10,
+                "awayScore": 20,
+                "gameDate": "2018-09-09T17:00:00.000Z",
+                "gameId": 380909015,
+                "homeProTeamId": 15,
+                "homeScore": 27,
+                "period": 4,
+                "status": 3
+            },
+            {
+                "awayProTeamId": 25,
+                "awayScore": 16,
+                "gameDate": "2018-09-09T17:00:00.000Z",
+                "gameId": 380909016,
+                "homeProTeamId": 16,
+                "homeScore": 24,
+                "period": 4,
+                "status": 3
+            },
+            {
+                "awayProTeamId": 34,
+                "awayScore": 20,
+                "gameDate": "2018-09-09T17:00:00.000Z",
+                "gameId": 380909017,
+                "homeProTeamId": 17,
+                "homeScore": 27,
+                "period": 4,
+                "status": 3
+            },
+            {
+                "awayProTeamId": 27,
+                "awayScore": 48,
+                "gameDate": "2018-09-09T17:00:00.000Z",
+                "gameId": 380909018,
+                "homeProTeamId": 18,
+                "homeScore": 40,
+                "period": 4,
+                "status": 3
+            },
+            {
+                "awayProTeamId": 30,
+                "awayScore": 20,
+                "gameDate": "2018-09-09T17:00:00.000Z",
+                "gameId": 380909019,
+                "homeProTeamId": 19,
+                "homeScore": 15,
+                "period": 4,
+                "status": 3
+            },
+            {
+                "awayProTeamId": 2,
+                "awayScore": 3,
+                "gameDate": "2018-09-09T17:00:00.000Z",
+                "gameId": 380909033,
+                "homeProTeamId": 33,
+                "homeScore": 47,
+                "period": 4,
+                "status": 3
+            },
+            {
+                "awayProTeamId": 12,
+                "awayScore": 38,
+                "gameDate": "2018-09-09T20:05:00.000Z",
+                "gameId": 380909024,
+                "homeProTeamId": 24,
+                "homeScore": 28,
+                "period": 4,
+                "status": 3
+            },
+            {
+                "awayProTeamId": 26,
+                "awayScore": 24,
+                "gameDate": "2018-09-09T20:25:00.000Z",
+                "gameId": 380909007,
+                "homeProTeamId": 7,
+                "homeScore": 27,
+                "period": 4,
+                "status": 3
+            },
+            {
+                "awayProTeamId": 28,
+                "awayScore": 24,
+                "gameDate": "2018-09-09T20:25:00.000Z",
+                "gameId": 380909022,
+                "homeProTeamId": 22,
+                "homeScore": 6,
+                "period": 4,
+                "status": 3
+            },
+            {
+                "awayProTeamId": 6,
+                "awayScore": 8,
+                "gameDate": "2018-09-09T20:25:00.000Z",
+                "gameId": 380909029,
+                "homeProTeamId": 29,
+                "homeScore": 16,
+                "period": 4,
+                "status": 3
+            },
+            {
+                "awayProTeamId": 3,
+                "awayScore": 23,
+                "gameDate": "2018-09-10T00:20:00.000Z",
+                "gameId": 380909009,
+                "homeProTeamId": 9,
+                "homeScore": 24,
+                "period": 4,
+                "status": 3
+            },
+            {
+                "awayProTeamId": 20,
+                "awayScore": 48,
+                "gameDate": "2018-09-10T23:10:00.000Z",
+                "gameId": 380910008,
+                "homeProTeamId": 8,
+                "homeScore": 17,
+                "period": 4,
+                "status": 3
+            },
+            {
+                "awayProTeamId": 14,
+                "awayScore": 33,
+                "gameDate": "2018-09-11T02:20:00.000Z",
+                "gameId": 380910013,
+                "homeProTeamId": 13,
+                "homeScore": 13,
+                "period": 4,
+                "status": 3
+            }
+        ],
+        "proGamesInProgress": false
+    }
+}
