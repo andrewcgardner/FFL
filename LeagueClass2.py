@@ -105,6 +105,7 @@ class Week(object):
         games['time'] = games['time'].str.split('.').str[0]
         games['gameDate'] = pd.to_datetime(games['date'] + ' ' + games['time'])
         games.drop(['date','time','status'],axis=1,inplace=True)
+        games.rename(columns={'gameId': 'proGameIds'},inplace=True)
 
         return games
     # The two class methods below can be removed after .txt testing
@@ -146,7 +147,7 @@ class Model(object):
         S = Season(L)
         weeks = S.weeksComplete(schedule)
         managers = S.getManagers(teams)
-
+        weeks = [1,2]
         for week_num in weeks:
             W = Week(S,week_num)
             matchups = W.getMatchups(schedule)
@@ -169,12 +170,15 @@ class Model(object):
                                     ,right=managers
                                             ,how='left'
                                             ,on=['teamId','seasonId'])
+            # Joining Progames table for additional metadata:
+                box_data = pd.merge(left=box_data
+                                    ,right=progames
+                                        ,how='left'
+                                        ,on='proGameIds')
             # Publish data to PostgreSQL server
-                #box_data.to_sql('etl_api_boxscore_data',pgsql,schema='fantasyfootball',if_exists='append',index=False)
+                box_data.to_sql('etl_api_boxscore_data',pgsql,schema='fantasyfootball',if_exists='append',index=False)
             # Publish data to .csv for testing
-                box_data.to_csv("C:\\workspace\\python\\projects\\ESPN\\FFL\\box_data.csv")
-                progames.to_csv("C:\\workspace\\python\\projects\\ESPN\\FFL\\progames.csv")
-
+                #box_data.to_csv("C:\\workspace\\python\\projects\\ESPN\\FFL\\box_data.csv")
 
 if __name__=='__main__':
     #league = input("Enter ESPN Fantasy Football League ID: ")
