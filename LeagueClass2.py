@@ -50,13 +50,12 @@ class Season(object):
         for index in teamIndex:
             for d in teams['teams'][index]['owners']:
                 ownerList = [
-                    self.seasonId
+                    int(self.seasonId)
                     ,teams['teams'][index]['division']['divisionId']
                     ,teams['teams'][index]['division']['divisionName']
-                    ,teams['teams'][index]['teamId']
+                    ,int(teams['teams'][index]['teamId'])
                     ,teams['teams'][index]['teamAbbrev']
-                    ,teams['teams'][index]['teamLocation']
-                    ,teams['teams'][index]['teamNickname']
+                    ,teams['teams'][index]['teamLocation'] + ' ' + teams['teams'][index]['teamNickname']
                     ,d['ownerId']
                     ,d['firstName'] + ' ' + d['lastName']
                     ,d['primaryOwner']
@@ -65,8 +64,8 @@ class Season(object):
                 teamList.append(ownerList)
 
         df = pd.DataFrame(teamList, columns = ['seasonId','divisionId','divisionName'
-                                        ,'teamId','teamAbbrev','teamLocation','teamNickname'
-                                        ,'ownerId','fullName','isPrimary'])
+                                            ,'teamId','teamAbbrev','teamName'
+                                            ,'ownerId','fullName','isPrimary'])
 
         primary = df[df['isPrimary']]
         secondary = df[df['isPrimary'] == False]
@@ -170,6 +169,12 @@ class Model(object):
                                     ,right=managers
                                             ,how='left'
                                             ,on=['teamId','seasonId'])
+            # Joining Manager table for opponent metadata:
+                box_data = pd.merge(left=box_data
+                                    ,right=managers
+                                            ,left_on=['opponentTeamId','seasonId']
+                                            ,right_on=['teamId','seasonId']
+                                            ,suffixes=['','.opponent'])
             # Joining Progames table for additional metadata:
                 box_data = pd.merge(left=box_data
                                     ,right=progames
