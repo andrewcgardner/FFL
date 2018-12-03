@@ -11,64 +11,35 @@ def unmelt(row,targetVal):
 def parseBox(json):
     df = json_normalize(json)
     
-    # Columns we don't need, including stat totals (to be derived through aggregation)
-    cols_to_drop = [
-        'currentPeriodProjectedStats.appliedStatTotal'
-        ,'currentPeriodRealStats.appliedStatTotal'
-        ,'isQueuedWaiverLocked'
-        ,'isTradeLocked'
-        ,'lockStatus'
-        ,'player.draftRank'
-        ,'player.droppable'
-        ,'player.eligibleSlotCategoryIds'
-        ,'player.gameStarterStatus'
-        ,'player.healthStatus'
-        ,'player.isActive'
-        ,'player.isIREligible'
-        ,'player.jersey'
-        ,'player.lastNewsDate'
-        ,'player.lastVideoDate'
-        ,'player.percentChange'
-        ,'player.playerRatingSeason'
-        ,'player.sportsId'
-        ,'player.tickerId'
-        ,'player.totalPoints'
-        ,'player.universeId'
-        ,'player.value'
-        ,'watchList'
-        # Added the below columns to drop until I have a strategy to use them in analysis #
-        ,'player.positionRank'
-        ,'player.percentOwned'
-        ,'player.percentStarted'
-        ,'pvoRank'
-    ]
-    for col in df.columns:
-        if 'rawStats' in col:
-            cols_to_drop.append(col)
-
-    df = df.drop(cols_to_drop,axis=1)
-
     # Meta-data columns that we care about #
     ## Commented out the most fluid of fields until I have a strategy to use them in analysis #
+    ## positionRank, percentOwned, percentStarted, pvoRank #
     id_cols = [
         'opponentProTeamId'
         ,'player.firstName'
         ,'player.lastName'
         ,'player.defaultPositionId'
-        #,'player.percentOwned'
-        #,'player.percentStarted'
         ,'player.playerId'
-        #,'player.positionRank'
         ,'player.proTeamId'
         ,'proGameIds'
-        #,'pvoRank'
         ,'slotCategoryId'
     ]
-
+    # Projected and actual stats columns
     value_cols = [
         col for col in df.columns if 'RealStats' in col
             or 'ProjectedStats' in col
     ]
+    # Every column not included in the aforementioned lists
+    cols_to_drop = [
+        col for col in df.columns if col not in value_cols
+            and col not in id_cols
+    ]
+    # Explicitly dropping raw statistics columns for the time being
+    for col in df.columns:
+        if 'rawStats' in col:
+            cols_to_drop.append(col)
+
+    df = df.drop(cols_to_drop,axis=1)
     
     newdf = pd.melt(df, id_vars=id_cols, value_vars=value_cols, value_name='score')
 
