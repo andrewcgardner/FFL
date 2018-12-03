@@ -1,0 +1,4332 @@
+{
+    "leagueSchedule": {
+        "leagueId": 180704,
+        "matchupPeriodTypeId": 1,
+        "playoffMatchupLength": 1,
+        "playoffTeamCount": 6,
+        "regularSeasonMatchupLength": 1,
+        "regularSeasonMatchupPeriodCount": 13,
+        "scheduleItems": [
+            {
+                "matchupPeriodId": 1,
+                "matchups": [
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 1,
+                                "divisionName": "Favre (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/CatsAndDogs/cats_dogs-12.svg",
+                            "teamAbbrev": "MATT",
+                            "teamId": 11,
+                            "teamLocation": "Kitten",
+                            "teamNickname": "Wittens",
+                            "waiverRank": 9
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 11,
+                        "awayTeamScores": [
+                            79.9
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 0,
+                                "divisionName": "Montana (A)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "http://i65.tinypic.com/x1c6yo.jpg",
+                            "teamAbbrev": "DAVE",
+                            "teamId": 12,
+                            "teamLocation": "Thug",
+                            "teamNickname": "Life",
+                            "waiverRank": 8
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 12,
+                        "homeTeamScores": [
+                            94.84
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 1
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 1,
+                                "divisionName": "Favre (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/TeamKinny-MartinLaksman/TeamKinny-32.svg",
+                            "teamAbbrev": "MULL",
+                            "teamId": 8,
+                            "teamLocation": "Chudley",
+                            "teamNickname": "Cannons",
+                            "waiverRank": 2
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 8,
+                        "awayTeamScores": [
+                            73.66
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 0,
+                                "divisionName": "Montana (A)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "https://i.imgur.com/z3xk0xQ.jpg",
+                            "teamAbbrev": "RING",
+                            "teamId": 1,
+                            "teamLocation": "Bellementary,",
+                            "teamNickname": "My Dear Watson",
+                            "waiverRank": 10
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 1,
+                        "homeTeamScores": [
+                            50.94
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 2
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 1,
+                                "divisionName": "Favre (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/BlitznBears-MartinLaksman/bears-08.svg",
+                            "teamAbbrev": "GARD",
+                            "teamId": 5,
+                            "teamLocation": "Cranford",
+                            "teamNickname": "Agreement",
+                            "waiverRank": 4
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 5,
+                        "awayTeamScores": [
+                            96.52
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 0,
+                                "divisionName": "Montana (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/OldTimeMickeyAndFriends/Football_Goofy.svg",
+                            "teamAbbrev": "DEVL",
+                            "teamId": 4,
+                            "teamLocation": "Devlins",
+                            "teamNickname": "Advocates",
+                            "waiverRank": 12
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 4,
+                        "homeTeamScores": [
+                            78.08
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 2
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 3,
+                                "divisionName": "Simms (N)",
+                                "size": 3
+                            },
+                            "logoType": "custom",
+                            "logoUrl": "http://sphotos-a.xx.fbcdn.net/hphotos-ash4/107_507831195227_3747_n.jpg",
+                            "teamAbbrev": "TRI",
+                            "teamId": 2,
+                            "teamLocation": "The Tom Reilly",
+                            "teamNickname": "Experience",
+                            "waiverRank": 1
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 2,
+                        "awayTeamScores": [
+                            59.54
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 2,
+                                "divisionName": "Elway (N)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "https://static1.squarespace.com/static/588a3be3e4fcb519d7de89e6/t/58c812a8bf629ac501c61dd5/1489506989882/",
+                            "teamAbbrev": "GGG",
+                            "teamId": 10,
+                            "teamLocation": "Gigantic ",
+                            "teamNickname": "Gridiron Gang",
+                            "waiverRank": 7
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 10,
+                        "homeTeamScores": [
+                            90.12
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 1
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 3,
+                                "divisionName": "Simms (N)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/StarWarsTheForceAwakens-ToddDetwiler/ESPN_Star_Wars_02a.svg",
+                            "teamAbbrev": "Kal",
+                            "teamId": 6,
+                            "teamLocation": "Kal's",
+                            "teamNickname": "Trashers",
+                            "waiverRank": 11
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 6,
+                        "awayTeamScores": [
+                            91.98
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 2,
+                                "divisionName": "Elway (N)",
+                                "size": 3
+                            },
+                            "logoType": "none",
+                            "logoUrl": "",
+                            "teamAbbrev": "PREZ",
+                            "teamId": 3,
+                            "teamLocation": "Team",
+                            "teamNickname": "Preziosi",
+                            "waiverRank": 6
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 3,
+                        "homeTeamScores": [
+                            80.34
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 2
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 3,
+                                "divisionName": "Simms (N)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/8bitHeros-JoeyEllis/8bit_football-01.svg",
+                            "teamAbbrev": "HOP",
+                            "teamId": 9,
+                            "teamLocation": "Johnny",
+                            "teamNickname": "Hopkins",
+                            "waiverRank": 5
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 9,
+                        "awayTeamScores": [
+                            105.32
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 2,
+                                "divisionName": "Elway (N)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "http://www.thefantasygridiron.com/wp-content/uploads/2017/08/Little-Red-Fournette.jpg",
+                            "teamAbbrev": "CON",
+                            "teamId": 7,
+                            "teamLocation": "Little Red",
+                            "teamNickname": "Fournette",
+                            "waiverRank": 3
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 7,
+                        "homeTeamScores": [
+                            75.92
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 2
+                    }
+                ]
+            },
+            {
+                "matchupPeriodId": 2,
+                "matchups": [
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 0,
+                                "divisionName": "Montana (A)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "https://i.imgur.com/z3xk0xQ.jpg",
+                            "teamAbbrev": "RING",
+                            "teamId": 1,
+                            "teamLocation": "Bellementary,",
+                            "teamNickname": "My Dear Watson",
+                            "waiverRank": 10
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 1,
+                        "awayTeamScores": [
+                            89.54
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 2,
+                                "divisionName": "Elway (N)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "http://www.thefantasygridiron.com/wp-content/uploads/2017/08/Little-Red-Fournette.jpg",
+                            "teamAbbrev": "CON",
+                            "teamId": 7,
+                            "teamLocation": "Little Red",
+                            "teamNickname": "Fournette",
+                            "waiverRank": 3
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 7,
+                        "homeTeamScores": [
+                            87.22
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 2
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 1,
+                                "divisionName": "Favre (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/CatsAndDogs/cats_dogs-12.svg",
+                            "teamAbbrev": "MATT",
+                            "teamId": 11,
+                            "teamLocation": "Kitten",
+                            "teamNickname": "Wittens",
+                            "waiverRank": 9
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 11,
+                        "awayTeamScores": [
+                            77.66
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 3,
+                                "divisionName": "Simms (N)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/StarWarsTheForceAwakens-ToddDetwiler/ESPN_Star_Wars_02a.svg",
+                            "teamAbbrev": "Kal",
+                            "teamId": 6,
+                            "teamLocation": "Kal's",
+                            "teamNickname": "Trashers",
+                            "waiverRank": 11
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 6,
+                        "homeTeamScores": [
+                            77.2
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 2
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 0,
+                                "divisionName": "Montana (A)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "http://i65.tinypic.com/x1c6yo.jpg",
+                            "teamAbbrev": "DAVE",
+                            "teamId": 12,
+                            "teamLocation": "Thug",
+                            "teamNickname": "Life",
+                            "waiverRank": 8
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 12,
+                        "awayTeamScores": [
+                            96.34
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 3,
+                                "divisionName": "Simms (N)",
+                                "size": 3
+                            },
+                            "logoType": "custom",
+                            "logoUrl": "http://sphotos-a.xx.fbcdn.net/hphotos-ash4/107_507831195227_3747_n.jpg",
+                            "teamAbbrev": "TRI",
+                            "teamId": 2,
+                            "teamLocation": "The Tom Reilly",
+                            "teamNickname": "Experience",
+                            "waiverRank": 1
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 2,
+                        "homeTeamScores": [
+                            65.18
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 2
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 0,
+                                "divisionName": "Montana (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/OldTimeMickeyAndFriends/Football_Goofy.svg",
+                            "teamAbbrev": "DEVL",
+                            "teamId": 4,
+                            "teamLocation": "Devlins",
+                            "teamNickname": "Advocates",
+                            "waiverRank": 12
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 4,
+                        "awayTeamScores": [
+                            90.78
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 2,
+                                "divisionName": "Elway (N)",
+                                "size": 3
+                            },
+                            "logoType": "none",
+                            "logoUrl": "",
+                            "teamAbbrev": "PREZ",
+                            "teamId": 3,
+                            "teamLocation": "Team",
+                            "teamNickname": "Preziosi",
+                            "waiverRank": 6
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 3,
+                        "homeTeamScores": [
+                            96.82
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 1
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 1,
+                                "divisionName": "Favre (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/TeamKinny-MartinLaksman/TeamKinny-32.svg",
+                            "teamAbbrev": "MULL",
+                            "teamId": 8,
+                            "teamLocation": "Chudley",
+                            "teamNickname": "Cannons",
+                            "waiverRank": 2
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 8,
+                        "awayTeamScores": [
+                            81.06
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 3,
+                                "divisionName": "Simms (N)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/8bitHeros-JoeyEllis/8bit_football-01.svg",
+                            "teamAbbrev": "HOP",
+                            "teamId": 9,
+                            "teamLocation": "Johnny",
+                            "teamNickname": "Hopkins",
+                            "waiverRank": 5
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 9,
+                        "homeTeamScores": [
+                            112.72
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 1
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 1,
+                                "divisionName": "Favre (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/BlitznBears-MartinLaksman/bears-08.svg",
+                            "teamAbbrev": "GARD",
+                            "teamId": 5,
+                            "teamLocation": "Cranford",
+                            "teamNickname": "Agreement",
+                            "waiverRank": 4
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 5,
+                        "awayTeamScores": [
+                            74.82
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 2,
+                                "divisionName": "Elway (N)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "https://static1.squarespace.com/static/588a3be3e4fcb519d7de89e6/t/58c812a8bf629ac501c61dd5/1489506989882/",
+                            "teamAbbrev": "GGG",
+                            "teamId": 10,
+                            "teamLocation": "Gigantic ",
+                            "teamNickname": "Gridiron Gang",
+                            "waiverRank": 7
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 10,
+                        "homeTeamScores": [
+                            102.98
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 1
+                    }
+                ]
+            },
+            {
+                "matchupPeriodId": 3,
+                "matchups": [
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 0,
+                                "divisionName": "Montana (A)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "https://i.imgur.com/z3xk0xQ.jpg",
+                            "teamAbbrev": "RING",
+                            "teamId": 1,
+                            "teamLocation": "Bellementary,",
+                            "teamNickname": "My Dear Watson",
+                            "waiverRank": 10
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 1,
+                        "awayTeamScores": [
+                            85.2
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 0,
+                                "divisionName": "Montana (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/OldTimeMickeyAndFriends/Football_Goofy.svg",
+                            "teamAbbrev": "DEVL",
+                            "teamId": 4,
+                            "teamLocation": "Devlins",
+                            "teamNickname": "Advocates",
+                            "waiverRank": 12
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 4,
+                        "homeTeamScores": [
+                            119.62
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 1
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 0,
+                                "divisionName": "Montana (A)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "http://i65.tinypic.com/x1c6yo.jpg",
+                            "teamAbbrev": "DAVE",
+                            "teamId": 12,
+                            "teamLocation": "Thug",
+                            "teamNickname": "Life",
+                            "waiverRank": 8
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 12,
+                        "awayTeamScores": [
+                            74.38
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 1,
+                                "divisionName": "Favre (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/TeamKinny-MartinLaksman/TeamKinny-32.svg",
+                            "teamAbbrev": "MULL",
+                            "teamId": 8,
+                            "teamLocation": "Chudley",
+                            "teamNickname": "Cannons",
+                            "waiverRank": 2
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 8,
+                        "homeTeamScores": [
+                            53.62
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 2
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 1,
+                                "divisionName": "Favre (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/CatsAndDogs/cats_dogs-12.svg",
+                            "teamAbbrev": "MATT",
+                            "teamId": 11,
+                            "teamLocation": "Kitten",
+                            "teamNickname": "Wittens",
+                            "waiverRank": 9
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 11,
+                        "awayTeamScores": [
+                            120.3
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 1,
+                                "divisionName": "Favre (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/BlitznBears-MartinLaksman/bears-08.svg",
+                            "teamAbbrev": "GARD",
+                            "teamId": 5,
+                            "teamLocation": "Cranford",
+                            "teamNickname": "Agreement",
+                            "waiverRank": 4
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 5,
+                        "homeTeamScores": [
+                            66.4
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 2
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 2,
+                                "divisionName": "Elway (N)",
+                                "size": 3
+                            },
+                            "logoType": "none",
+                            "logoUrl": "",
+                            "teamAbbrev": "PREZ",
+                            "teamId": 3,
+                            "teamLocation": "Team",
+                            "teamNickname": "Preziosi",
+                            "waiverRank": 6
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 3,
+                        "awayTeamScores": [
+                            130.52
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 2,
+                                "divisionName": "Elway (N)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "https://static1.squarespace.com/static/588a3be3e4fcb519d7de89e6/t/58c812a8bf629ac501c61dd5/1489506989882/",
+                            "teamAbbrev": "GGG",
+                            "teamId": 10,
+                            "teamLocation": "Gigantic ",
+                            "teamNickname": "Gridiron Gang",
+                            "waiverRank": 7
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 10,
+                        "homeTeamScores": [
+                            101.66
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 2
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 3,
+                                "divisionName": "Simms (N)",
+                                "size": 3
+                            },
+                            "logoType": "custom",
+                            "logoUrl": "http://sphotos-a.xx.fbcdn.net/hphotos-ash4/107_507831195227_3747_n.jpg",
+                            "teamAbbrev": "TRI",
+                            "teamId": 2,
+                            "teamLocation": "The Tom Reilly",
+                            "teamNickname": "Experience",
+                            "waiverRank": 1
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 2,
+                        "awayTeamScores": [
+                            87.26
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 2,
+                                "divisionName": "Elway (N)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "http://www.thefantasygridiron.com/wp-content/uploads/2017/08/Little-Red-Fournette.jpg",
+                            "teamAbbrev": "CON",
+                            "teamId": 7,
+                            "teamLocation": "Little Red",
+                            "teamNickname": "Fournette",
+                            "waiverRank": 3
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 7,
+                        "homeTeamScores": [
+                            70.14
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 2
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 3,
+                                "divisionName": "Simms (N)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/StarWarsTheForceAwakens-ToddDetwiler/ESPN_Star_Wars_02a.svg",
+                            "teamAbbrev": "Kal",
+                            "teamId": 6,
+                            "teamLocation": "Kal's",
+                            "teamNickname": "Trashers",
+                            "waiverRank": 11
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 6,
+                        "awayTeamScores": [
+                            74.92
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 3,
+                                "divisionName": "Simms (N)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/8bitHeros-JoeyEllis/8bit_football-01.svg",
+                            "teamAbbrev": "HOP",
+                            "teamId": 9,
+                            "teamLocation": "Johnny",
+                            "teamNickname": "Hopkins",
+                            "waiverRank": 5
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 9,
+                        "homeTeamScores": [
+                            134.72
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 1
+                    }
+                ]
+            },
+            {
+                "matchupPeriodId": 4,
+                "matchups": [
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 0,
+                                "divisionName": "Montana (A)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "https://i.imgur.com/z3xk0xQ.jpg",
+                            "teamAbbrev": "RING",
+                            "teamId": 1,
+                            "teamLocation": "Bellementary,",
+                            "teamNickname": "My Dear Watson",
+                            "waiverRank": 10
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 1,
+                        "awayTeamScores": [
+                            110.32
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 3,
+                                "divisionName": "Simms (N)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/8bitHeros-JoeyEllis/8bit_football-01.svg",
+                            "teamAbbrev": "HOP",
+                            "teamId": 9,
+                            "teamLocation": "Johnny",
+                            "teamNickname": "Hopkins",
+                            "waiverRank": 5
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 9,
+                        "homeTeamScores": [
+                            116.4
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 1
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 0,
+                                "divisionName": "Montana (A)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "http://i65.tinypic.com/x1c6yo.jpg",
+                            "teamAbbrev": "DAVE",
+                            "teamId": 12,
+                            "teamLocation": "Thug",
+                            "teamNickname": "Life",
+                            "waiverRank": 8
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 12,
+                        "awayTeamScores": [
+                            93.78
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 2,
+                                "divisionName": "Elway (N)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "https://static1.squarespace.com/static/588a3be3e4fcb519d7de89e6/t/58c812a8bf629ac501c61dd5/1489506989882/",
+                            "teamAbbrev": "GGG",
+                            "teamId": 10,
+                            "teamLocation": "Gigantic ",
+                            "teamNickname": "Gridiron Gang",
+                            "waiverRank": 7
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 10,
+                        "homeTeamScores": [
+                            79.26
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 2
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 0,
+                                "divisionName": "Montana (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/OldTimeMickeyAndFriends/Football_Goofy.svg",
+                            "teamAbbrev": "DEVL",
+                            "teamId": 4,
+                            "teamLocation": "Devlins",
+                            "teamNickname": "Advocates",
+                            "waiverRank": 12
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 4,
+                        "awayTeamScores": [
+                            87.28
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 2,
+                                "divisionName": "Elway (N)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "http://www.thefantasygridiron.com/wp-content/uploads/2017/08/Little-Red-Fournette.jpg",
+                            "teamAbbrev": "CON",
+                            "teamId": 7,
+                            "teamLocation": "Little Red",
+                            "teamNickname": "Fournette",
+                            "waiverRank": 3
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 7,
+                        "homeTeamScores": [
+                            69.18
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 2
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 3,
+                                "divisionName": "Simms (N)",
+                                "size": 3
+                            },
+                            "logoType": "custom",
+                            "logoUrl": "http://sphotos-a.xx.fbcdn.net/hphotos-ash4/107_507831195227_3747_n.jpg",
+                            "teamAbbrev": "TRI",
+                            "teamId": 2,
+                            "teamLocation": "The Tom Reilly",
+                            "teamNickname": "Experience",
+                            "waiverRank": 1
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 2,
+                        "awayTeamScores": [
+                            66.88
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 1,
+                                "divisionName": "Favre (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/BlitznBears-MartinLaksman/bears-08.svg",
+                            "teamAbbrev": "GARD",
+                            "teamId": 5,
+                            "teamLocation": "Cranford",
+                            "teamNickname": "Agreement",
+                            "waiverRank": 4
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 5,
+                        "homeTeamScores": [
+                            62.54
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 2
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 1,
+                                "divisionName": "Favre (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/CatsAndDogs/cats_dogs-12.svg",
+                            "teamAbbrev": "MATT",
+                            "teamId": 11,
+                            "teamLocation": "Kitten",
+                            "teamNickname": "Wittens",
+                            "waiverRank": 9
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 11,
+                        "awayTeamScores": [
+                            99.6
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 2,
+                                "divisionName": "Elway (N)",
+                                "size": 3
+                            },
+                            "logoType": "none",
+                            "logoUrl": "",
+                            "teamAbbrev": "PREZ",
+                            "teamId": 3,
+                            "teamLocation": "Team",
+                            "teamNickname": "Preziosi",
+                            "waiverRank": 6
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 3,
+                        "homeTeamScores": [
+                            110.76
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 1
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 1,
+                                "divisionName": "Favre (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/TeamKinny-MartinLaksman/TeamKinny-32.svg",
+                            "teamAbbrev": "MULL",
+                            "teamId": 8,
+                            "teamLocation": "Chudley",
+                            "teamNickname": "Cannons",
+                            "waiverRank": 2
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 8,
+                        "awayTeamScores": [
+                            58.98
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 3,
+                                "divisionName": "Simms (N)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/StarWarsTheForceAwakens-ToddDetwiler/ESPN_Star_Wars_02a.svg",
+                            "teamAbbrev": "Kal",
+                            "teamId": 6,
+                            "teamLocation": "Kal's",
+                            "teamNickname": "Trashers",
+                            "waiverRank": 11
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 6,
+                        "homeTeamScores": [
+                            77.48
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 1
+                    }
+                ]
+            },
+            {
+                "matchupPeriodId": 5,
+                "matchups": [
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 0,
+                                "divisionName": "Montana (A)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "http://i65.tinypic.com/x1c6yo.jpg",
+                            "teamAbbrev": "DAVE",
+                            "teamId": 12,
+                            "teamLocation": "Thug",
+                            "teamNickname": "Life",
+                            "waiverRank": 8
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 12,
+                        "awayTeamScores": [
+                            93.72
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 0,
+                                "divisionName": "Montana (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/OldTimeMickeyAndFriends/Football_Goofy.svg",
+                            "teamAbbrev": "DEVL",
+                            "teamId": 4,
+                            "teamLocation": "Devlins",
+                            "teamNickname": "Advocates",
+                            "waiverRank": 12
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 4,
+                        "homeTeamScores": [
+                            91.52
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 2
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 1,
+                                "divisionName": "Favre (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/TeamKinny-MartinLaksman/TeamKinny-32.svg",
+                            "teamAbbrev": "MULL",
+                            "teamId": 8,
+                            "teamLocation": "Chudley",
+                            "teamNickname": "Cannons",
+                            "waiverRank": 2
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 8,
+                        "awayTeamScores": [
+                            65.96
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 1,
+                                "divisionName": "Favre (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/CatsAndDogs/cats_dogs-12.svg",
+                            "teamAbbrev": "MATT",
+                            "teamId": 11,
+                            "teamLocation": "Kitten",
+                            "teamNickname": "Wittens",
+                            "waiverRank": 9
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 11,
+                        "homeTeamScores": [
+                            53.1
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 2
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 3,
+                                "divisionName": "Simms (N)",
+                                "size": 3
+                            },
+                            "logoType": "custom",
+                            "logoUrl": "http://sphotos-a.xx.fbcdn.net/hphotos-ash4/107_507831195227_3747_n.jpg",
+                            "teamAbbrev": "TRI",
+                            "teamId": 2,
+                            "teamLocation": "The Tom Reilly",
+                            "teamNickname": "Experience",
+                            "waiverRank": 1
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 2,
+                        "awayTeamScores": [
+                            79.76
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 3,
+                                "divisionName": "Simms (N)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/StarWarsTheForceAwakens-ToddDetwiler/ESPN_Star_Wars_02a.svg",
+                            "teamAbbrev": "Kal",
+                            "teamId": 6,
+                            "teamLocation": "Kal's",
+                            "teamNickname": "Trashers",
+                            "waiverRank": 11
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 6,
+                        "homeTeamScores": [
+                            104.64
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 1
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 2,
+                                "divisionName": "Elway (N)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "https://static1.squarespace.com/static/588a3be3e4fcb519d7de89e6/t/58c812a8bf629ac501c61dd5/1489506989882/",
+                            "teamAbbrev": "GGG",
+                            "teamId": 10,
+                            "teamLocation": "Gigantic ",
+                            "teamNickname": "Gridiron Gang",
+                            "waiverRank": 7
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 10,
+                        "awayTeamScores": [
+                            62.66
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 2,
+                                "divisionName": "Elway (N)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "http://www.thefantasygridiron.com/wp-content/uploads/2017/08/Little-Red-Fournette.jpg",
+                            "teamAbbrev": "CON",
+                            "teamId": 7,
+                            "teamLocation": "Little Red",
+                            "teamNickname": "Fournette",
+                            "waiverRank": 3
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 7,
+                        "homeTeamScores": [
+                            95.66
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 1
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 3,
+                                "divisionName": "Simms (N)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/8bitHeros-JoeyEllis/8bit_football-01.svg",
+                            "teamAbbrev": "HOP",
+                            "teamId": 9,
+                            "teamLocation": "Johnny",
+                            "teamNickname": "Hopkins",
+                            "waiverRank": 5
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 9,
+                        "awayTeamScores": [
+                            104.22
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 1,
+                                "divisionName": "Favre (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/BlitznBears-MartinLaksman/bears-08.svg",
+                            "teamAbbrev": "GARD",
+                            "teamId": 5,
+                            "teamLocation": "Cranford",
+                            "teamNickname": "Agreement",
+                            "waiverRank": 4
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 5,
+                        "homeTeamScores": [
+                            63.68
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 2
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 2,
+                                "divisionName": "Elway (N)",
+                                "size": 3
+                            },
+                            "logoType": "none",
+                            "logoUrl": "",
+                            "teamAbbrev": "PREZ",
+                            "teamId": 3,
+                            "teamLocation": "Team",
+                            "teamNickname": "Preziosi",
+                            "waiverRank": 6
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 3,
+                        "awayTeamScores": [
+                            79.54
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 0,
+                                "divisionName": "Montana (A)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "https://i.imgur.com/z3xk0xQ.jpg",
+                            "teamAbbrev": "RING",
+                            "teamId": 1,
+                            "teamLocation": "Bellementary,",
+                            "teamNickname": "My Dear Watson",
+                            "waiverRank": 10
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 1,
+                        "homeTeamScores": [
+                            88.04
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 1
+                    }
+                ]
+            },
+            {
+                "matchupPeriodId": 6,
+                "matchups": [
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 0,
+                                "divisionName": "Montana (A)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "https://i.imgur.com/z3xk0xQ.jpg",
+                            "teamAbbrev": "RING",
+                            "teamId": 1,
+                            "teamLocation": "Bellementary,",
+                            "teamNickname": "My Dear Watson",
+                            "waiverRank": 10
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 1,
+                        "awayTeamScores": [
+                            131.24
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 0,
+                                "divisionName": "Montana (A)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "http://i65.tinypic.com/x1c6yo.jpg",
+                            "teamAbbrev": "DAVE",
+                            "teamId": 12,
+                            "teamLocation": "Thug",
+                            "teamNickname": "Life",
+                            "waiverRank": 8
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 12,
+                        "homeTeamScores": [
+                            99.72
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 2
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 1,
+                                "divisionName": "Favre (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/BlitznBears-MartinLaksman/bears-08.svg",
+                            "teamAbbrev": "GARD",
+                            "teamId": 5,
+                            "teamLocation": "Cranford",
+                            "teamNickname": "Agreement",
+                            "waiverRank": 4
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 5,
+                        "awayTeamScores": [
+                            75.34
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 1,
+                                "divisionName": "Favre (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/TeamKinny-MartinLaksman/TeamKinny-32.svg",
+                            "teamAbbrev": "MULL",
+                            "teamId": 8,
+                            "teamLocation": "Chudley",
+                            "teamNickname": "Cannons",
+                            "waiverRank": 2
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 8,
+                        "homeTeamScores": [
+                            62.04
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 2
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 2,
+                                "divisionName": "Elway (N)",
+                                "size": 3
+                            },
+                            "logoType": "none",
+                            "logoUrl": "",
+                            "teamAbbrev": "PREZ",
+                            "teamId": 3,
+                            "teamLocation": "Team",
+                            "teamNickname": "Preziosi",
+                            "waiverRank": 6
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 3,
+                        "awayTeamScores": [
+                            80.12
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 2,
+                                "divisionName": "Elway (N)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "http://www.thefantasygridiron.com/wp-content/uploads/2017/08/Little-Red-Fournette.jpg",
+                            "teamAbbrev": "CON",
+                            "teamId": 7,
+                            "teamLocation": "Little Red",
+                            "teamNickname": "Fournette",
+                            "waiverRank": 3
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 7,
+                        "homeTeamScores": [
+                            108.08
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 1
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 3,
+                                "divisionName": "Simms (N)",
+                                "size": 3
+                            },
+                            "logoType": "custom",
+                            "logoUrl": "http://sphotos-a.xx.fbcdn.net/hphotos-ash4/107_507831195227_3747_n.jpg",
+                            "teamAbbrev": "TRI",
+                            "teamId": 2,
+                            "teamLocation": "The Tom Reilly",
+                            "teamNickname": "Experience",
+                            "waiverRank": 1
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 2,
+                        "awayTeamScores": [
+                            89.42
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 3,
+                                "divisionName": "Simms (N)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/8bitHeros-JoeyEllis/8bit_football-01.svg",
+                            "teamAbbrev": "HOP",
+                            "teamId": 9,
+                            "teamLocation": "Johnny",
+                            "teamNickname": "Hopkins",
+                            "waiverRank": 5
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 9,
+                        "homeTeamScores": [
+                            128.32
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 1
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 0,
+                                "divisionName": "Montana (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/OldTimeMickeyAndFriends/Football_Goofy.svg",
+                            "teamAbbrev": "DEVL",
+                            "teamId": 4,
+                            "teamLocation": "Devlins",
+                            "teamNickname": "Advocates",
+                            "waiverRank": 12
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 4,
+                        "awayTeamScores": [
+                            66.48
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 3,
+                                "divisionName": "Simms (N)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/StarWarsTheForceAwakens-ToddDetwiler/ESPN_Star_Wars_02a.svg",
+                            "teamAbbrev": "Kal",
+                            "teamId": 6,
+                            "teamLocation": "Kal's",
+                            "teamNickname": "Trashers",
+                            "waiverRank": 11
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 6,
+                        "homeTeamScores": [
+                            69.94
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 1
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 2,
+                                "divisionName": "Elway (N)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "https://static1.squarespace.com/static/588a3be3e4fcb519d7de89e6/t/58c812a8bf629ac501c61dd5/1489506989882/",
+                            "teamAbbrev": "GGG",
+                            "teamId": 10,
+                            "teamLocation": "Gigantic ",
+                            "teamNickname": "Gridiron Gang",
+                            "waiverRank": 7
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 10,
+                        "awayTeamScores": [
+                            71.38
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 1,
+                                "divisionName": "Favre (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/CatsAndDogs/cats_dogs-12.svg",
+                            "teamAbbrev": "MATT",
+                            "teamId": 11,
+                            "teamLocation": "Kitten",
+                            "teamNickname": "Wittens",
+                            "waiverRank": 9
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 11,
+                        "homeTeamScores": [
+                            115.4
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 1
+                    }
+                ]
+            },
+            {
+                "matchupPeriodId": 7,
+                "matchups": [
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 0,
+                                "divisionName": "Montana (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/OldTimeMickeyAndFriends/Football_Goofy.svg",
+                            "teamAbbrev": "DEVL",
+                            "teamId": 4,
+                            "teamLocation": "Devlins",
+                            "teamNickname": "Advocates",
+                            "waiverRank": 12
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 4,
+                        "awayTeamScores": [
+                            59.26
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 3,
+                                "divisionName": "Simms (N)",
+                                "size": 3
+                            },
+                            "logoType": "custom",
+                            "logoUrl": "http://sphotos-a.xx.fbcdn.net/hphotos-ash4/107_507831195227_3747_n.jpg",
+                            "teamAbbrev": "TRI",
+                            "teamId": 2,
+                            "teamLocation": "The Tom Reilly",
+                            "teamNickname": "Experience",
+                            "waiverRank": 1
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 2,
+                        "homeTeamScores": [
+                            76.72
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 1
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 0,
+                                "divisionName": "Montana (A)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "http://i65.tinypic.com/x1c6yo.jpg",
+                            "teamAbbrev": "DAVE",
+                            "teamId": 12,
+                            "teamLocation": "Thug",
+                            "teamNickname": "Life",
+                            "waiverRank": 8
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 12,
+                        "awayTeamScores": [
+                            119.92
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 3,
+                                "divisionName": "Simms (N)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/8bitHeros-JoeyEllis/8bit_football-01.svg",
+                            "teamAbbrev": "HOP",
+                            "teamId": 9,
+                            "teamLocation": "Johnny",
+                            "teamNickname": "Hopkins",
+                            "waiverRank": 5
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 9,
+                        "homeTeamScores": [
+                            111.56
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 2
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 0,
+                                "divisionName": "Montana (A)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "https://i.imgur.com/z3xk0xQ.jpg",
+                            "teamAbbrev": "RING",
+                            "teamId": 1,
+                            "teamLocation": "Bellementary,",
+                            "teamNickname": "My Dear Watson",
+                            "waiverRank": 10
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 1,
+                        "awayTeamScores": [
+                            88.24
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 2,
+                                "divisionName": "Elway (N)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "https://static1.squarespace.com/static/588a3be3e4fcb519d7de89e6/t/58c812a8bf629ac501c61dd5/1489506989882/",
+                            "teamAbbrev": "GGG",
+                            "teamId": 10,
+                            "teamLocation": "Gigantic ",
+                            "teamNickname": "Gridiron Gang",
+                            "waiverRank": 7
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 10,
+                        "homeTeamScores": [
+                            85.78
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 2
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 1,
+                                "divisionName": "Favre (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/BlitznBears-MartinLaksman/bears-08.svg",
+                            "teamAbbrev": "GARD",
+                            "teamId": 5,
+                            "teamLocation": "Cranford",
+                            "teamNickname": "Agreement",
+                            "waiverRank": 4
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 5,
+                        "awayTeamScores": [
+                            103.18
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 3,
+                                "divisionName": "Simms (N)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/StarWarsTheForceAwakens-ToddDetwiler/ESPN_Star_Wars_02a.svg",
+                            "teamAbbrev": "Kal",
+                            "teamId": 6,
+                            "teamLocation": "Kal's",
+                            "teamNickname": "Trashers",
+                            "waiverRank": 11
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 6,
+                        "homeTeamScores": [
+                            76.46
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 2
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 1,
+                                "divisionName": "Favre (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/TeamKinny-MartinLaksman/TeamKinny-32.svg",
+                            "teamAbbrev": "MULL",
+                            "teamId": 8,
+                            "teamLocation": "Chudley",
+                            "teamNickname": "Cannons",
+                            "waiverRank": 2
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 8,
+                        "awayTeamScores": [
+                            60.38
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 2,
+                                "divisionName": "Elway (N)",
+                                "size": 3
+                            },
+                            "logoType": "none",
+                            "logoUrl": "",
+                            "teamAbbrev": "PREZ",
+                            "teamId": 3,
+                            "teamLocation": "Team",
+                            "teamNickname": "Preziosi",
+                            "waiverRank": 6
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 3,
+                        "homeTeamScores": [
+                            70.54
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 1
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 1,
+                                "divisionName": "Favre (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/CatsAndDogs/cats_dogs-12.svg",
+                            "teamAbbrev": "MATT",
+                            "teamId": 11,
+                            "teamLocation": "Kitten",
+                            "teamNickname": "Wittens",
+                            "waiverRank": 9
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 11,
+                        "awayTeamScores": [
+                            100.02
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 2,
+                                "divisionName": "Elway (N)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "http://www.thefantasygridiron.com/wp-content/uploads/2017/08/Little-Red-Fournette.jpg",
+                            "teamAbbrev": "CON",
+                            "teamId": 7,
+                            "teamLocation": "Little Red",
+                            "teamNickname": "Fournette",
+                            "waiverRank": 3
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 7,
+                        "homeTeamScores": [
+                            76.42
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 2
+                    }
+                ]
+            },
+            {
+                "matchupPeriodId": 8,
+                "matchups": [
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 0,
+                                "divisionName": "Montana (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/OldTimeMickeyAndFriends/Football_Goofy.svg",
+                            "teamAbbrev": "DEVL",
+                            "teamId": 4,
+                            "teamLocation": "Devlins",
+                            "teamNickname": "Advocates",
+                            "waiverRank": 12
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 4,
+                        "awayTeamScores": [
+                            84.92
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 1,
+                                "divisionName": "Favre (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/CatsAndDogs/cats_dogs-12.svg",
+                            "teamAbbrev": "MATT",
+                            "teamId": 11,
+                            "teamLocation": "Kitten",
+                            "teamNickname": "Wittens",
+                            "waiverRank": 9
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 11,
+                        "homeTeamScores": [
+                            92.62
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 1
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 1,
+                                "divisionName": "Favre (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/BlitznBears-MartinLaksman/bears-08.svg",
+                            "teamAbbrev": "GARD",
+                            "teamId": 5,
+                            "teamLocation": "Cranford",
+                            "teamNickname": "Agreement",
+                            "waiverRank": 4
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 5,
+                        "awayTeamScores": [
+                            86.08
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 0,
+                                "divisionName": "Montana (A)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "https://i.imgur.com/z3xk0xQ.jpg",
+                            "teamAbbrev": "RING",
+                            "teamId": 1,
+                            "teamLocation": "Bellementary,",
+                            "teamNickname": "My Dear Watson",
+                            "waiverRank": 10
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 1,
+                        "homeTeamScores": [
+                            66.56
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 2
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 3,
+                                "divisionName": "Simms (N)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/StarWarsTheForceAwakens-ToddDetwiler/ESPN_Star_Wars_02a.svg",
+                            "teamAbbrev": "Kal",
+                            "teamId": 6,
+                            "teamLocation": "Kal's",
+                            "teamNickname": "Trashers",
+                            "waiverRank": 11
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 6,
+                        "awayTeamScores": [
+                            56.22
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 2,
+                                "divisionName": "Elway (N)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "https://static1.squarespace.com/static/588a3be3e4fcb519d7de89e6/t/58c812a8bf629ac501c61dd5/1489506989882/",
+                            "teamAbbrev": "GGG",
+                            "teamId": 10,
+                            "teamLocation": "Gigantic ",
+                            "teamNickname": "Gridiron Gang",
+                            "waiverRank": 7
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 10,
+                        "homeTeamScores": [
+                            80.22
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 1
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 3,
+                                "divisionName": "Simms (N)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/8bitHeros-JoeyEllis/8bit_football-01.svg",
+                            "teamAbbrev": "HOP",
+                            "teamId": 9,
+                            "teamLocation": "Johnny",
+                            "teamNickname": "Hopkins",
+                            "waiverRank": 5
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 9,
+                        "awayTeamScores": [
+                            131.68
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 2,
+                                "divisionName": "Elway (N)",
+                                "size": 3
+                            },
+                            "logoType": "none",
+                            "logoUrl": "",
+                            "teamAbbrev": "PREZ",
+                            "teamId": 3,
+                            "teamLocation": "Team",
+                            "teamNickname": "Preziosi",
+                            "waiverRank": 6
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 3,
+                        "homeTeamScores": [
+                            96.76
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 2
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 0,
+                                "divisionName": "Montana (A)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "http://i65.tinypic.com/x1c6yo.jpg",
+                            "teamAbbrev": "DAVE",
+                            "teamId": 12,
+                            "teamLocation": "Thug",
+                            "teamNickname": "Life",
+                            "waiverRank": 8
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 12,
+                        "awayTeamScores": [
+                            91.88
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 2,
+                                "divisionName": "Elway (N)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "http://www.thefantasygridiron.com/wp-content/uploads/2017/08/Little-Red-Fournette.jpg",
+                            "teamAbbrev": "CON",
+                            "teamId": 7,
+                            "teamLocation": "Little Red",
+                            "teamNickname": "Fournette",
+                            "waiverRank": 3
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 7,
+                        "homeTeamScores": [
+                            89.14
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 2
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 1,
+                                "divisionName": "Favre (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/TeamKinny-MartinLaksman/TeamKinny-32.svg",
+                            "teamAbbrev": "MULL",
+                            "teamId": 8,
+                            "teamLocation": "Chudley",
+                            "teamNickname": "Cannons",
+                            "waiverRank": 2
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 8,
+                        "awayTeamScores": [
+                            69.2
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 3,
+                                "divisionName": "Simms (N)",
+                                "size": 3
+                            },
+                            "logoType": "custom",
+                            "logoUrl": "http://sphotos-a.xx.fbcdn.net/hphotos-ash4/107_507831195227_3747_n.jpg",
+                            "teamAbbrev": "TRI",
+                            "teamId": 2,
+                            "teamLocation": "The Tom Reilly",
+                            "teamNickname": "Experience",
+                            "waiverRank": 1
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 2,
+                        "homeTeamScores": [
+                            76.16
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 1
+                    }
+                ]
+            },
+            {
+                "matchupPeriodId": 9,
+                "matchups": [
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 0,
+                                "divisionName": "Montana (A)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "http://i65.tinypic.com/x1c6yo.jpg",
+                            "teamAbbrev": "DAVE",
+                            "teamId": 12,
+                            "teamLocation": "Thug",
+                            "teamNickname": "Life",
+                            "waiverRank": 8
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 12,
+                        "awayTeamScores": [
+                            82.12
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 3,
+                                "divisionName": "Simms (N)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/StarWarsTheForceAwakens-ToddDetwiler/ESPN_Star_Wars_02a.svg",
+                            "teamAbbrev": "Kal",
+                            "teamId": 6,
+                            "teamLocation": "Kal's",
+                            "teamNickname": "Trashers",
+                            "waiverRank": 11
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 6,
+                        "homeTeamScores": [
+                            90.16
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 1
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 1,
+                                "divisionName": "Favre (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/BlitznBears-MartinLaksman/bears-08.svg",
+                            "teamAbbrev": "GARD",
+                            "teamId": 5,
+                            "teamLocation": "Cranford",
+                            "teamNickname": "Agreement",
+                            "waiverRank": 4
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 5,
+                        "awayTeamScores": [
+                            78.92
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 2,
+                                "divisionName": "Elway (N)",
+                                "size": 3
+                            },
+                            "logoType": "none",
+                            "logoUrl": "",
+                            "teamAbbrev": "PREZ",
+                            "teamId": 3,
+                            "teamLocation": "Team",
+                            "teamNickname": "Preziosi",
+                            "waiverRank": 6
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 3,
+                        "homeTeamScores": [
+                            95.82
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 1
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 0,
+                                "divisionName": "Montana (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/OldTimeMickeyAndFriends/Football_Goofy.svg",
+                            "teamAbbrev": "DEVL",
+                            "teamId": 4,
+                            "teamLocation": "Devlins",
+                            "teamNickname": "Advocates",
+                            "waiverRank": 12
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 4,
+                        "awayTeamScores": [
+                            67.74
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 2,
+                                "divisionName": "Elway (N)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "https://static1.squarespace.com/static/588a3be3e4fcb519d7de89e6/t/58c812a8bf629ac501c61dd5/1489506989882/",
+                            "teamAbbrev": "GGG",
+                            "teamId": 10,
+                            "teamLocation": "Gigantic ",
+                            "teamNickname": "Gridiron Gang",
+                            "waiverRank": 7
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 10,
+                        "homeTeamScores": [
+                            87.7
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 1
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 1,
+                                "divisionName": "Favre (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/CatsAndDogs/cats_dogs-12.svg",
+                            "teamAbbrev": "MATT",
+                            "teamId": 11,
+                            "teamLocation": "Kitten",
+                            "teamNickname": "Wittens",
+                            "waiverRank": 9
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 11,
+                        "awayTeamScores": [
+                            48.08
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 3,
+                                "divisionName": "Simms (N)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/8bitHeros-JoeyEllis/8bit_football-01.svg",
+                            "teamAbbrev": "HOP",
+                            "teamId": 9,
+                            "teamLocation": "Johnny",
+                            "teamNickname": "Hopkins",
+                            "waiverRank": 5
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 9,
+                        "homeTeamScores": [
+                            95.78
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 1
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 0,
+                                "divisionName": "Montana (A)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "https://i.imgur.com/z3xk0xQ.jpg",
+                            "teamAbbrev": "RING",
+                            "teamId": 1,
+                            "teamLocation": "Bellementary,",
+                            "teamNickname": "My Dear Watson",
+                            "waiverRank": 10
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 1,
+                        "awayTeamScores": [
+                            100.74
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 3,
+                                "divisionName": "Simms (N)",
+                                "size": 3
+                            },
+                            "logoType": "custom",
+                            "logoUrl": "http://sphotos-a.xx.fbcdn.net/hphotos-ash4/107_507831195227_3747_n.jpg",
+                            "teamAbbrev": "TRI",
+                            "teamId": 2,
+                            "teamLocation": "The Tom Reilly",
+                            "teamNickname": "Experience",
+                            "waiverRank": 1
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 2,
+                        "homeTeamScores": [
+                            80.92
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 2
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 1,
+                                "divisionName": "Favre (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/TeamKinny-MartinLaksman/TeamKinny-32.svg",
+                            "teamAbbrev": "MULL",
+                            "teamId": 8,
+                            "teamLocation": "Chudley",
+                            "teamNickname": "Cannons",
+                            "waiverRank": 2
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 8,
+                        "awayTeamScores": [
+                            111.1
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 2,
+                                "divisionName": "Elway (N)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "http://www.thefantasygridiron.com/wp-content/uploads/2017/08/Little-Red-Fournette.jpg",
+                            "teamAbbrev": "CON",
+                            "teamId": 7,
+                            "teamLocation": "Little Red",
+                            "teamNickname": "Fournette",
+                            "waiverRank": 3
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 7,
+                        "homeTeamScores": [
+                            68.36
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 2
+                    }
+                ]
+            },
+            {
+                "matchupPeriodId": 10,
+                "matchups": [
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 1,
+                                "divisionName": "Favre (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/BlitznBears-MartinLaksman/bears-08.svg",
+                            "teamAbbrev": "GARD",
+                            "teamId": 5,
+                            "teamLocation": "Cranford",
+                            "teamNickname": "Agreement",
+                            "waiverRank": 4
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 5,
+                        "awayTeamScores": [
+                            50.08
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 2,
+                                "divisionName": "Elway (N)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "http://www.thefantasygridiron.com/wp-content/uploads/2017/08/Little-Red-Fournette.jpg",
+                            "teamAbbrev": "CON",
+                            "teamId": 7,
+                            "teamLocation": "Little Red",
+                            "teamNickname": "Fournette",
+                            "waiverRank": 3
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 7,
+                        "homeTeamScores": [
+                            45.3
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 2
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 0,
+                                "divisionName": "Montana (A)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "http://i65.tinypic.com/x1c6yo.jpg",
+                            "teamAbbrev": "DAVE",
+                            "teamId": 12,
+                            "teamLocation": "Thug",
+                            "teamNickname": "Life",
+                            "waiverRank": 8
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 12,
+                        "awayTeamScores": [
+                            70.86
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 2,
+                                "divisionName": "Elway (N)",
+                                "size": 3
+                            },
+                            "logoType": "none",
+                            "logoUrl": "",
+                            "teamAbbrev": "PREZ",
+                            "teamId": 3,
+                            "teamLocation": "Team",
+                            "teamNickname": "Preziosi",
+                            "waiverRank": 6
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 3,
+                        "homeTeamScores": [
+                            108.16
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 1
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 0,
+                                "divisionName": "Montana (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/OldTimeMickeyAndFriends/Football_Goofy.svg",
+                            "teamAbbrev": "DEVL",
+                            "teamId": 4,
+                            "teamLocation": "Devlins",
+                            "teamNickname": "Advocates",
+                            "waiverRank": 12
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 4,
+                        "awayTeamScores": [
+                            85.04
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 3,
+                                "divisionName": "Simms (N)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/8bitHeros-JoeyEllis/8bit_football-01.svg",
+                            "teamAbbrev": "HOP",
+                            "teamId": 9,
+                            "teamLocation": "Johnny",
+                            "teamNickname": "Hopkins",
+                            "waiverRank": 5
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 9,
+                        "homeTeamScores": [
+                            84.12
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 2
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 0,
+                                "divisionName": "Montana (A)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "https://i.imgur.com/z3xk0xQ.jpg",
+                            "teamAbbrev": "RING",
+                            "teamId": 1,
+                            "teamLocation": "Bellementary,",
+                            "teamNickname": "My Dear Watson",
+                            "waiverRank": 10
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 1,
+                        "awayTeamScores": [
+                            118.1
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 3,
+                                "divisionName": "Simms (N)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/StarWarsTheForceAwakens-ToddDetwiler/ESPN_Star_Wars_02a.svg",
+                            "teamAbbrev": "Kal",
+                            "teamId": 6,
+                            "teamLocation": "Kal's",
+                            "teamNickname": "Trashers",
+                            "waiverRank": 11
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 6,
+                        "homeTeamScores": [
+                            116.24
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 2
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 1,
+                                "divisionName": "Favre (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/CatsAndDogs/cats_dogs-12.svg",
+                            "teamAbbrev": "MATT",
+                            "teamId": 11,
+                            "teamLocation": "Kitten",
+                            "teamNickname": "Wittens",
+                            "waiverRank": 9
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 11,
+                        "awayTeamScores": [
+                            105.28
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 3,
+                                "divisionName": "Simms (N)",
+                                "size": 3
+                            },
+                            "logoType": "custom",
+                            "logoUrl": "http://sphotos-a.xx.fbcdn.net/hphotos-ash4/107_507831195227_3747_n.jpg",
+                            "teamAbbrev": "TRI",
+                            "teamId": 2,
+                            "teamLocation": "The Tom Reilly",
+                            "teamNickname": "Experience",
+                            "waiverRank": 1
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 2,
+                        "homeTeamScores": [
+                            85.7
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 2
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 1,
+                                "divisionName": "Favre (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/TeamKinny-MartinLaksman/TeamKinny-32.svg",
+                            "teamAbbrev": "MULL",
+                            "teamId": 8,
+                            "teamLocation": "Chudley",
+                            "teamNickname": "Cannons",
+                            "waiverRank": 2
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 8,
+                        "awayTeamScores": [
+                            52.04
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 2,
+                                "divisionName": "Elway (N)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "https://static1.squarespace.com/static/588a3be3e4fcb519d7de89e6/t/58c812a8bf629ac501c61dd5/1489506989882/",
+                            "teamAbbrev": "GGG",
+                            "teamId": 10,
+                            "teamLocation": "Gigantic ",
+                            "teamNickname": "Gridiron Gang",
+                            "waiverRank": 7
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 10,
+                        "homeTeamScores": [
+                            82.26
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 1
+                    }
+                ]
+            },
+            {
+                "matchupPeriodId": 11,
+                "matchups": [
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 1,
+                                "divisionName": "Favre (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/BlitznBears-MartinLaksman/bears-08.svg",
+                            "teamAbbrev": "GARD",
+                            "teamId": 5,
+                            "teamLocation": "Cranford",
+                            "teamNickname": "Agreement",
+                            "waiverRank": 4
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 5,
+                        "awayTeamScores": [
+                            75.3
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 1,
+                                "divisionName": "Favre (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/CatsAndDogs/cats_dogs-12.svg",
+                            "teamAbbrev": "MATT",
+                            "teamId": 11,
+                            "teamLocation": "Kitten",
+                            "teamNickname": "Wittens",
+                            "waiverRank": 9
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 11,
+                        "homeTeamScores": [
+                            99.78
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 1
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 1,
+                                "divisionName": "Favre (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/TeamKinny-MartinLaksman/TeamKinny-32.svg",
+                            "teamAbbrev": "MULL",
+                            "teamId": 8,
+                            "teamLocation": "Chudley",
+                            "teamNickname": "Cannons",
+                            "waiverRank": 2
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 8,
+                        "awayTeamScores": [
+                            89.8
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 0,
+                                "divisionName": "Montana (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/OldTimeMickeyAndFriends/Football_Goofy.svg",
+                            "teamAbbrev": "DEVL",
+                            "teamId": 4,
+                            "teamLocation": "Devlins",
+                            "teamNickname": "Advocates",
+                            "waiverRank": 12
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 4,
+                        "homeTeamScores": [
+                            96.3
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 1
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 0,
+                                "divisionName": "Montana (A)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "https://i.imgur.com/z3xk0xQ.jpg",
+                            "teamAbbrev": "RING",
+                            "teamId": 1,
+                            "teamLocation": "Bellementary,",
+                            "teamNickname": "My Dear Watson",
+                            "waiverRank": 10
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 1,
+                        "awayTeamScores": [
+                            101.26
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 0,
+                                "divisionName": "Montana (A)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "http://i65.tinypic.com/x1c6yo.jpg",
+                            "teamAbbrev": "DAVE",
+                            "teamId": 12,
+                            "teamLocation": "Thug",
+                            "teamNickname": "Life",
+                            "waiverRank": 8
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 12,
+                        "homeTeamScores": [
+                            112.64
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 1
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 2,
+                                "divisionName": "Elway (N)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "https://static1.squarespace.com/static/588a3be3e4fcb519d7de89e6/t/58c812a8bf629ac501c61dd5/1489506989882/",
+                            "teamAbbrev": "GGG",
+                            "teamId": 10,
+                            "teamLocation": "Gigantic ",
+                            "teamNickname": "Gridiron Gang",
+                            "waiverRank": 7
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 10,
+                        "awayTeamScores": [
+                            85.78
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 2,
+                                "divisionName": "Elway (N)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "http://www.thefantasygridiron.com/wp-content/uploads/2017/08/Little-Red-Fournette.jpg",
+                            "teamAbbrev": "CON",
+                            "teamId": 7,
+                            "teamLocation": "Little Red",
+                            "teamNickname": "Fournette",
+                            "waiverRank": 3
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 7,
+                        "homeTeamScores": [
+                            79.02
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 2
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 3,
+                                "divisionName": "Simms (N)",
+                                "size": 3
+                            },
+                            "logoType": "custom",
+                            "logoUrl": "http://sphotos-a.xx.fbcdn.net/hphotos-ash4/107_507831195227_3747_n.jpg",
+                            "teamAbbrev": "TRI",
+                            "teamId": 2,
+                            "teamLocation": "The Tom Reilly",
+                            "teamNickname": "Experience",
+                            "waiverRank": 1
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 2,
+                        "awayTeamScores": [
+                            74.5
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 2,
+                                "divisionName": "Elway (N)",
+                                "size": 3
+                            },
+                            "logoType": "none",
+                            "logoUrl": "",
+                            "teamAbbrev": "PREZ",
+                            "teamId": 3,
+                            "teamLocation": "Team",
+                            "teamNickname": "Preziosi",
+                            "waiverRank": 6
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 3,
+                        "homeTeamScores": [
+                            106.5
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 1
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 3,
+                                "divisionName": "Simms (N)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/8bitHeros-JoeyEllis/8bit_football-01.svg",
+                            "teamAbbrev": "HOP",
+                            "teamId": 9,
+                            "teamLocation": "Johnny",
+                            "teamNickname": "Hopkins",
+                            "waiverRank": 5
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 9,
+                        "awayTeamScores": [
+                            102.22
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 3,
+                                "divisionName": "Simms (N)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/StarWarsTheForceAwakens-ToddDetwiler/ESPN_Star_Wars_02a.svg",
+                            "teamAbbrev": "Kal",
+                            "teamId": 6,
+                            "teamLocation": "Kal's",
+                            "teamNickname": "Trashers",
+                            "waiverRank": 11
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 6,
+                        "homeTeamScores": [
+                            64.7
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 2
+                    }
+                ]
+            },
+            {
+                "matchupPeriodId": 12,
+                "matchups": [
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 0,
+                                "divisionName": "Montana (A)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "http://i65.tinypic.com/x1c6yo.jpg",
+                            "teamAbbrev": "DAVE",
+                            "teamId": 12,
+                            "teamLocation": "Thug",
+                            "teamNickname": "Life",
+                            "waiverRank": 8
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 12,
+                        "awayTeamScores": [
+                            86.56
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 0,
+                                "divisionName": "Montana (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/OldTimeMickeyAndFriends/Football_Goofy.svg",
+                            "teamAbbrev": "DEVL",
+                            "teamId": 4,
+                            "teamLocation": "Devlins",
+                            "teamNickname": "Advocates",
+                            "waiverRank": 12
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 4,
+                        "homeTeamScores": [
+                            89.78
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 1
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 0,
+                                "divisionName": "Montana (A)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "https://i.imgur.com/z3xk0xQ.jpg",
+                            "teamAbbrev": "RING",
+                            "teamId": 1,
+                            "teamLocation": "Bellementary,",
+                            "teamNickname": "My Dear Watson",
+                            "waiverRank": 10
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 1,
+                        "awayTeamScores": [
+                            111.04
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 1,
+                                "divisionName": "Favre (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/CatsAndDogs/cats_dogs-12.svg",
+                            "teamAbbrev": "MATT",
+                            "teamId": 11,
+                            "teamLocation": "Kitten",
+                            "teamNickname": "Wittens",
+                            "waiverRank": 9
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 11,
+                        "homeTeamScores": [
+                            95.78
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 2
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 1,
+                                "divisionName": "Favre (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/BlitznBears-MartinLaksman/bears-08.svg",
+                            "teamAbbrev": "GARD",
+                            "teamId": 5,
+                            "teamLocation": "Cranford",
+                            "teamNickname": "Agreement",
+                            "waiverRank": 4
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 5,
+                        "awayTeamScores": [
+                            100.26
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 1,
+                                "divisionName": "Favre (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/TeamKinny-MartinLaksman/TeamKinny-32.svg",
+                            "teamAbbrev": "MULL",
+                            "teamId": 8,
+                            "teamLocation": "Chudley",
+                            "teamNickname": "Cannons",
+                            "waiverRank": 2
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 8,
+                        "homeTeamScores": [
+                            69.94
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 2
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 2,
+                                "divisionName": "Elway (N)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "http://www.thefantasygridiron.com/wp-content/uploads/2017/08/Little-Red-Fournette.jpg",
+                            "teamAbbrev": "CON",
+                            "teamId": 7,
+                            "teamLocation": "Little Red",
+                            "teamNickname": "Fournette",
+                            "waiverRank": 3
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 7,
+                        "awayTeamScores": [
+                            89.32
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 2,
+                                "divisionName": "Elway (N)",
+                                "size": 3
+                            },
+                            "logoType": "none",
+                            "logoUrl": "",
+                            "teamAbbrev": "PREZ",
+                            "teamId": 3,
+                            "teamLocation": "Team",
+                            "teamNickname": "Preziosi",
+                            "waiverRank": 6
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 3,
+                        "homeTeamScores": [
+                            105.12
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 1
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 3,
+                                "divisionName": "Simms (N)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/8bitHeros-JoeyEllis/8bit_football-01.svg",
+                            "teamAbbrev": "HOP",
+                            "teamId": 9,
+                            "teamLocation": "Johnny",
+                            "teamNickname": "Hopkins",
+                            "waiverRank": 5
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 9,
+                        "awayTeamScores": [
+                            76
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 2,
+                                "divisionName": "Elway (N)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "https://static1.squarespace.com/static/588a3be3e4fcb519d7de89e6/t/58c812a8bf629ac501c61dd5/1489506989882/",
+                            "teamAbbrev": "GGG",
+                            "teamId": 10,
+                            "teamLocation": "Gigantic ",
+                            "teamNickname": "Gridiron Gang",
+                            "waiverRank": 7
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 10,
+                        "homeTeamScores": [
+                            87
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 1
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 3,
+                                "divisionName": "Simms (N)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/StarWarsTheForceAwakens-ToddDetwiler/ESPN_Star_Wars_02a.svg",
+                            "teamAbbrev": "Kal",
+                            "teamId": 6,
+                            "teamLocation": "Kal's",
+                            "teamNickname": "Trashers",
+                            "waiverRank": 11
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 6,
+                        "awayTeamScores": [
+                            107.46
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 3,
+                                "divisionName": "Simms (N)",
+                                "size": 3
+                            },
+                            "logoType": "custom",
+                            "logoUrl": "http://sphotos-a.xx.fbcdn.net/hphotos-ash4/107_507831195227_3747_n.jpg",
+                            "teamAbbrev": "TRI",
+                            "teamId": 2,
+                            "teamLocation": "The Tom Reilly",
+                            "teamNickname": "Experience",
+                            "waiverRank": 1
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 2,
+                        "homeTeamScores": [
+                            80.98
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 2
+                    }
+                ]
+            },
+            {
+                "matchupPeriodId": 13,
+                "matchups": [
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 0,
+                                "divisionName": "Montana (A)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "https://i.imgur.com/z3xk0xQ.jpg",
+                            "teamAbbrev": "RING",
+                            "teamId": 1,
+                            "teamLocation": "Bellementary,",
+                            "teamNickname": "My Dear Watson",
+                            "waiverRank": 10
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 1,
+                        "awayTeamScores": [
+                            84.9
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 0,
+                                "divisionName": "Montana (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/OldTimeMickeyAndFriends/Football_Goofy.svg",
+                            "teamAbbrev": "DEVL",
+                            "teamId": 4,
+                            "teamLocation": "Devlins",
+                            "teamNickname": "Advocates",
+                            "waiverRank": 12
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 4,
+                        "homeTeamScores": [
+                            68.32
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 2
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 0,
+                                "divisionName": "Montana (A)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "http://i65.tinypic.com/x1c6yo.jpg",
+                            "teamAbbrev": "DAVE",
+                            "teamId": 12,
+                            "teamLocation": "Thug",
+                            "teamNickname": "Life",
+                            "waiverRank": 8
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 12,
+                        "awayTeamScores": [
+                            100.66
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 1,
+                                "divisionName": "Favre (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/BlitznBears-MartinLaksman/bears-08.svg",
+                            "teamAbbrev": "GARD",
+                            "teamId": 5,
+                            "teamLocation": "Cranford",
+                            "teamNickname": "Agreement",
+                            "waiverRank": 4
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 5,
+                        "homeTeamScores": [
+                            152.94
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 1
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 1,
+                                "divisionName": "Favre (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/CatsAndDogs/cats_dogs-12.svg",
+                            "teamAbbrev": "MATT",
+                            "teamId": 11,
+                            "teamLocation": "Kitten",
+                            "teamNickname": "Wittens",
+                            "waiverRank": 9
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 11,
+                        "awayTeamScores": [
+                            83.24
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 1,
+                                "divisionName": "Favre (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/TeamKinny-MartinLaksman/TeamKinny-32.svg",
+                            "teamAbbrev": "MULL",
+                            "teamId": 8,
+                            "teamLocation": "Chudley",
+                            "teamNickname": "Cannons",
+                            "waiverRank": 2
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 8,
+                        "homeTeamScores": [
+                            84.28
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 1
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 2,
+                                "divisionName": "Elway (N)",
+                                "size": 3
+                            },
+                            "logoType": "none",
+                            "logoUrl": "",
+                            "teamAbbrev": "PREZ",
+                            "teamId": 3,
+                            "teamLocation": "Team",
+                            "teamNickname": "Preziosi",
+                            "waiverRank": 6
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 3,
+                        "awayTeamScores": [
+                            107.52
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 2,
+                                "divisionName": "Elway (N)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "https://static1.squarespace.com/static/588a3be3e4fcb519d7de89e6/t/58c812a8bf629ac501c61dd5/1489506989882/",
+                            "teamAbbrev": "GGG",
+                            "teamId": 10,
+                            "teamLocation": "Gigantic ",
+                            "teamNickname": "Gridiron Gang",
+                            "waiverRank": 7
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 10,
+                        "homeTeamScores": [
+                            106.58
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 2
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 3,
+                                "divisionName": "Simms (N)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/StarWarsTheForceAwakens-ToddDetwiler/ESPN_Star_Wars_02a.svg",
+                            "teamAbbrev": "Kal",
+                            "teamId": 6,
+                            "teamLocation": "Kal's",
+                            "teamNickname": "Trashers",
+                            "waiverRank": 11
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 6,
+                        "awayTeamScores": [
+                            71.88
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 2,
+                                "divisionName": "Elway (N)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "http://www.thefantasygridiron.com/wp-content/uploads/2017/08/Little-Red-Fournette.jpg",
+                            "teamAbbrev": "CON",
+                            "teamId": 7,
+                            "teamLocation": "Little Red",
+                            "teamNickname": "Fournette",
+                            "waiverRank": 3
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 7,
+                        "homeTeamScores": [
+                            96.02
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 1
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 3,
+                                "divisionName": "Simms (N)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/8bitHeros-JoeyEllis/8bit_football-01.svg",
+                            "teamAbbrev": "HOP",
+                            "teamId": 9,
+                            "teamLocation": "Johnny",
+                            "teamNickname": "Hopkins",
+                            "waiverRank": 5
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 9,
+                        "awayTeamScores": [
+                            84.48
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 3,
+                                "divisionName": "Simms (N)",
+                                "size": 3
+                            },
+                            "logoType": "custom",
+                            "logoUrl": "http://sphotos-a.xx.fbcdn.net/hphotos-ash4/107_507831195227_3747_n.jpg",
+                            "teamAbbrev": "TRI",
+                            "teamId": 2,
+                            "teamLocation": "The Tom Reilly",
+                            "teamNickname": "Experience",
+                            "waiverRank": 1
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 2,
+                        "homeTeamScores": [
+                            62.52
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 2
+                    }
+                ]
+            },
+            {
+                "matchupPeriodId": 14,
+                "matchups": [
+                    {
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 3,
+                                "divisionName": "Simms (N)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/8bitHeros-JoeyEllis/8bit_football-01.svg",
+                            "teamAbbrev": "HOP",
+                            "teamId": 9,
+                            "teamLocation": "Johnny",
+                            "teamNickname": "Hopkins",
+                            "waiverRank": 5
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 9,
+                        "homeTeamScores": [
+                            122.44
+                        ],
+                        "isBye": true,
+                        "matchupTypeId": 0,
+                        "outcome": 0
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 2,
+                                "divisionName": "Elway (N)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "https://static1.squarespace.com/static/588a3be3e4fcb519d7de89e6/t/58c812a8bf629ac501c61dd5/1489506989882/",
+                            "teamAbbrev": "GGG",
+                            "teamId": 10,
+                            "teamLocation": "Gigantic ",
+                            "teamNickname": "Gridiron Gang",
+                            "waiverRank": 7
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 10,
+                        "awayTeamScores": [
+                            114.64
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 2,
+                                "divisionName": "Elway (N)",
+                                "size": 3
+                            },
+                            "logoType": "none",
+                            "logoUrl": "",
+                            "teamAbbrev": "PREZ",
+                            "teamId": 3,
+                            "teamLocation": "Team",
+                            "teamNickname": "Preziosi",
+                            "waiverRank": 6
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 3,
+                        "homeTeamScores": [
+                            77.54
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 2
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 1,
+                                "divisionName": "Favre (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/CatsAndDogs/cats_dogs-12.svg",
+                            "teamAbbrev": "MATT",
+                            "teamId": 11,
+                            "teamLocation": "Kitten",
+                            "teamNickname": "Wittens",
+                            "waiverRank": 9
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 11,
+                        "awayTeamScores": [
+                            68.24
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 0,
+                                "divisionName": "Montana (A)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "http://i65.tinypic.com/x1c6yo.jpg",
+                            "teamAbbrev": "DAVE",
+                            "teamId": 12,
+                            "teamLocation": "Thug",
+                            "teamNickname": "Life",
+                            "waiverRank": 8
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 12,
+                        "homeTeamScores": [
+                            116.06
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 1
+                    },
+                    {
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 0,
+                                "divisionName": "Montana (A)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "https://i.imgur.com/z3xk0xQ.jpg",
+                            "teamAbbrev": "RING",
+                            "teamId": 1,
+                            "teamLocation": "Bellementary,",
+                            "teamNickname": "My Dear Watson",
+                            "waiverRank": 10
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 1,
+                        "homeTeamScores": [
+                            75.26
+                        ],
+                        "isBye": true,
+                        "matchupTypeId": 0,
+                        "outcome": 0
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 3,
+                                "divisionName": "Simms (N)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/StarWarsTheForceAwakens-ToddDetwiler/ESPN_Star_Wars_02a.svg",
+                            "teamAbbrev": "Kal",
+                            "teamId": 6,
+                            "teamLocation": "Kal's",
+                            "teamNickname": "Trashers",
+                            "waiverRank": 11
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 6,
+                        "awayTeamScores": [
+                            87.6
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 1,
+                                "divisionName": "Favre (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/BlitznBears-MartinLaksman/bears-08.svg",
+                            "teamAbbrev": "GARD",
+                            "teamId": 5,
+                            "teamLocation": "Cranford",
+                            "teamNickname": "Agreement",
+                            "waiverRank": 4
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 5,
+                        "homeTeamScores": [
+                            92.22
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 3,
+                        "outcome": 1
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 3,
+                                "divisionName": "Simms (N)",
+                                "size": 3
+                            },
+                            "logoType": "custom",
+                            "logoUrl": "http://sphotos-a.xx.fbcdn.net/hphotos-ash4/107_507831195227_3747_n.jpg",
+                            "teamAbbrev": "TRI",
+                            "teamId": 2,
+                            "teamLocation": "The Tom Reilly",
+                            "teamNickname": "Experience",
+                            "waiverRank": 1
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 2,
+                        "awayTeamScores": [
+                            113.64
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 0,
+                                "divisionName": "Montana (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/OldTimeMickeyAndFriends/Football_Goofy.svg",
+                            "teamAbbrev": "DEVL",
+                            "teamId": 4,
+                            "teamLocation": "Devlins",
+                            "teamNickname": "Advocates",
+                            "waiverRank": 12
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 4,
+                        "homeTeamScores": [
+                            90.62
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 3,
+                        "outcome": 2
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 2,
+                                "divisionName": "Elway (N)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "http://www.thefantasygridiron.com/wp-content/uploads/2017/08/Little-Red-Fournette.jpg",
+                            "teamAbbrev": "CON",
+                            "teamId": 7,
+                            "teamLocation": "Little Red",
+                            "teamNickname": "Fournette",
+                            "waiverRank": 3
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 7,
+                        "awayTeamScores": [
+                            98.64
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 1,
+                                "divisionName": "Favre (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/TeamKinny-MartinLaksman/TeamKinny-32.svg",
+                            "teamAbbrev": "MULL",
+                            "teamId": 8,
+                            "teamLocation": "Chudley",
+                            "teamNickname": "Cannons",
+                            "waiverRank": 2
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 8,
+                        "homeTeamScores": [
+                            104.08
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 3,
+                        "outcome": 1
+                    }
+                ]
+            },
+            {
+                "matchupPeriodId": 15,
+                "matchups": [
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 2,
+                                "divisionName": "Elway (N)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "https://static1.squarespace.com/static/588a3be3e4fcb519d7de89e6/t/58c812a8bf629ac501c61dd5/1489506989882/",
+                            "teamAbbrev": "GGG",
+                            "teamId": 10,
+                            "teamLocation": "Gigantic ",
+                            "teamNickname": "Gridiron Gang",
+                            "waiverRank": 7
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 10,
+                        "awayTeamScores": [
+                            89.88
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 3,
+                                "divisionName": "Simms (N)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/8bitHeros-JoeyEllis/8bit_football-01.svg",
+                            "teamAbbrev": "HOP",
+                            "teamId": 9,
+                            "teamLocation": "Johnny",
+                            "teamNickname": "Hopkins",
+                            "waiverRank": 5
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 9,
+                        "homeTeamScores": [
+                            114.18
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 1
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 0,
+                                "divisionName": "Montana (A)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "http://i65.tinypic.com/x1c6yo.jpg",
+                            "teamAbbrev": "DAVE",
+                            "teamId": 12,
+                            "teamLocation": "Thug",
+                            "teamNickname": "Life",
+                            "waiverRank": 8
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 12,
+                        "awayTeamScores": [
+                            50.58
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 0,
+                                "divisionName": "Montana (A)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "https://i.imgur.com/z3xk0xQ.jpg",
+                            "teamAbbrev": "RING",
+                            "teamId": 1,
+                            "teamLocation": "Bellementary,",
+                            "teamNickname": "My Dear Watson",
+                            "waiverRank": 10
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 1,
+                        "homeTeamScores": [
+                            116.24
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 1
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 1,
+                                "divisionName": "Favre (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/CatsAndDogs/cats_dogs-12.svg",
+                            "teamAbbrev": "MATT",
+                            "teamId": 11,
+                            "teamLocation": "Kitten",
+                            "teamNickname": "Wittens",
+                            "waiverRank": 9
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 11,
+                        "awayTeamScores": [
+                            86.34
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 2,
+                                "divisionName": "Elway (N)",
+                                "size": 3
+                            },
+                            "logoType": "none",
+                            "logoUrl": "",
+                            "teamAbbrev": "PREZ",
+                            "teamId": 3,
+                            "teamLocation": "Team",
+                            "teamNickname": "Preziosi",
+                            "waiverRank": 6
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 3,
+                        "homeTeamScores": [
+                            111.6
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 1,
+                        "outcome": 1
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 3,
+                                "divisionName": "Simms (N)",
+                                "size": 3
+                            },
+                            "logoType": "custom",
+                            "logoUrl": "http://sphotos-a.xx.fbcdn.net/hphotos-ash4/107_507831195227_3747_n.jpg",
+                            "teamAbbrev": "TRI",
+                            "teamId": 2,
+                            "teamLocation": "The Tom Reilly",
+                            "teamNickname": "Experience",
+                            "waiverRank": 1
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 2,
+                        "awayTeamScores": [
+                            74.98
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 1,
+                                "divisionName": "Favre (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/BlitznBears-MartinLaksman/bears-08.svg",
+                            "teamAbbrev": "GARD",
+                            "teamId": 5,
+                            "teamLocation": "Cranford",
+                            "teamNickname": "Agreement",
+                            "waiverRank": 4
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 5,
+                        "homeTeamScores": [
+                            94.14
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 3,
+                        "outcome": 1
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 1,
+                                "divisionName": "Favre (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/TeamKinny-MartinLaksman/TeamKinny-32.svg",
+                            "teamAbbrev": "MULL",
+                            "teamId": 8,
+                            "teamLocation": "Chudley",
+                            "teamNickname": "Cannons",
+                            "waiverRank": 2
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 8,
+                        "awayTeamScores": [
+                            96.88
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 3,
+                                "divisionName": "Simms (N)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/StarWarsTheForceAwakens-ToddDetwiler/ESPN_Star_Wars_02a.svg",
+                            "teamAbbrev": "Kal",
+                            "teamId": 6,
+                            "teamLocation": "Kal's",
+                            "teamNickname": "Trashers",
+                            "waiverRank": 11
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 6,
+                        "homeTeamScores": [
+                            82.44
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 3,
+                        "outcome": 2
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 2,
+                                "divisionName": "Elway (N)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "http://www.thefantasygridiron.com/wp-content/uploads/2017/08/Little-Red-Fournette.jpg",
+                            "teamAbbrev": "CON",
+                            "teamId": 7,
+                            "teamLocation": "Little Red",
+                            "teamNickname": "Fournette",
+                            "waiverRank": 3
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 7,
+                        "awayTeamScores": [
+                            92.36
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 0,
+                                "divisionName": "Montana (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/OldTimeMickeyAndFriends/Football_Goofy.svg",
+                            "teamAbbrev": "DEVL",
+                            "teamId": 4,
+                            "teamLocation": "Devlins",
+                            "teamNickname": "Advocates",
+                            "waiverRank": 12
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 4,
+                        "homeTeamScores": [
+                            51.82
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 3,
+                        "outcome": 2
+                    }
+                ]
+            },
+            {
+                "matchupPeriodId": 16,
+                "matchups": [
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 0,
+                                "divisionName": "Montana (A)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "https://i.imgur.com/z3xk0xQ.jpg",
+                            "teamAbbrev": "RING",
+                            "teamId": 1,
+                            "teamLocation": "Bellementary,",
+                            "teamNickname": "My Dear Watson",
+                            "waiverRank": 10
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 1,
+                        "awayTeamScores": [
+                            107.08
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 3,
+                                "divisionName": "Simms (N)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/8bitHeros-JoeyEllis/8bit_football-01.svg",
+                            "teamAbbrev": "HOP",
+                            "teamId": 9,
+                            "teamLocation": "Johnny",
+                            "teamNickname": "Hopkins",
+                            "waiverRank": 5
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 9,
+                        "homeTeamScores": [
+                            124.42
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 0,
+                        "outcome": 1
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 2,
+                                "divisionName": "Elway (N)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "https://static1.squarespace.com/static/588a3be3e4fcb519d7de89e6/t/58c812a8bf629ac501c61dd5/1489506989882/",
+                            "teamAbbrev": "GGG",
+                            "teamId": 10,
+                            "teamLocation": "Gigantic ",
+                            "teamNickname": "Gridiron Gang",
+                            "waiverRank": 7
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 10,
+                        "awayTeamScores": [
+                            82.62
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 0,
+                                "divisionName": "Montana (A)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "http://i65.tinypic.com/x1c6yo.jpg",
+                            "teamAbbrev": "DAVE",
+                            "teamId": 12,
+                            "teamLocation": "Thug",
+                            "teamNickname": "Life",
+                            "waiverRank": 8
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 12,
+                        "homeTeamScores": [
+                            86.5
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 1,
+                        "outcome": 1
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 1,
+                                "divisionName": "Favre (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/CatsAndDogs/cats_dogs-12.svg",
+                            "teamAbbrev": "MATT",
+                            "teamId": 11,
+                            "teamLocation": "Kitten",
+                            "teamNickname": "Wittens",
+                            "waiverRank": 9
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 11,
+                        "awayTeamScores": [
+                            69.76
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 2,
+                                "divisionName": "Elway (N)",
+                                "size": 3
+                            },
+                            "logoType": "none",
+                            "logoUrl": "",
+                            "teamAbbrev": "PREZ",
+                            "teamId": 3,
+                            "teamLocation": "Team",
+                            "teamNickname": "Preziosi",
+                            "waiverRank": 6
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 3,
+                        "homeTeamScores": [
+                            90.4
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 1,
+                        "outcome": 1
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 1,
+                                "divisionName": "Favre (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/TeamKinny-MartinLaksman/TeamKinny-32.svg",
+                            "teamAbbrev": "MULL",
+                            "teamId": 8,
+                            "teamLocation": "Chudley",
+                            "teamNickname": "Cannons",
+                            "waiverRank": 2
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 8,
+                        "awayTeamScores": [
+                            61.04
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 1,
+                                "divisionName": "Favre (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/BlitznBears-MartinLaksman/bears-08.svg",
+                            "teamAbbrev": "GARD",
+                            "teamId": 5,
+                            "teamLocation": "Cranford",
+                            "teamNickname": "Agreement",
+                            "waiverRank": 4
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 5,
+                        "homeTeamScores": [
+                            82.26
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 3,
+                        "outcome": 1
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 2,
+                                "divisionName": "Elway (N)",
+                                "size": 3
+                            },
+                            "logoType": "customValid",
+                            "logoUrl": "http://www.thefantasygridiron.com/wp-content/uploads/2017/08/Little-Red-Fournette.jpg",
+                            "teamAbbrev": "CON",
+                            "teamId": 7,
+                            "teamLocation": "Little Red",
+                            "teamNickname": "Fournette",
+                            "waiverRank": 3
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 7,
+                        "awayTeamScores": [
+                            74.74
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 3,
+                                "divisionName": "Simms (N)",
+                                "size": 3
+                            },
+                            "logoType": "custom",
+                            "logoUrl": "http://sphotos-a.xx.fbcdn.net/hphotos-ash4/107_507831195227_3747_n.jpg",
+                            "teamAbbrev": "TRI",
+                            "teamId": 2,
+                            "teamLocation": "The Tom Reilly",
+                            "teamNickname": "Experience",
+                            "waiverRank": 1
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 2,
+                        "homeTeamScores": [
+                            62.12
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 3,
+                        "outcome": 2
+                    },
+                    {
+                        "awayTeam": {
+                            "division": {
+                                "divisionId": 0,
+                                "divisionName": "Montana (A)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/OldTimeMickeyAndFriends/Football_Goofy.svg",
+                            "teamAbbrev": "DEVL",
+                            "teamId": 4,
+                            "teamLocation": "Devlins",
+                            "teamNickname": "Advocates",
+                            "waiverRank": 12
+                        },
+                        "awayTeamAdjustment": 0,
+                        "awayTeamId": 4,
+                        "awayTeamScores": [
+                            86.16
+                        ],
+                        "homeTeam": {
+                            "division": {
+                                "divisionId": 3,
+                                "divisionName": "Simms (N)",
+                                "size": 3
+                            },
+                            "logoType": "vector",
+                            "logoUrl": "http://g.espncdn.com/s/ffllm/logos/StarWarsTheForceAwakens-ToddDetwiler/ESPN_Star_Wars_02a.svg",
+                            "teamAbbrev": "Kal",
+                            "teamId": 6,
+                            "teamLocation": "Kal's",
+                            "teamNickname": "Trashers",
+                            "waiverRank": 11
+                        },
+                        "homeTeamAdjustment": 0,
+                        "homeTeamBonus": 0,
+                        "homeTeamId": 6,
+                        "homeTeamScores": [
+                            95.66
+                        ],
+                        "isBye": false,
+                        "matchupTypeId": 3,
+                        "outcome": 1
+                    }
+                ]
+            }
+        ],
+        "scoringTypeId": 1,
+        "seasonId": 2017
+    },
+    "metadata": {
+        "dateModifiedLeague": "2018-04-13T08:33:47.057Z",
+        "defaults": {},
+        "leagueId": "180704",
+        "seasonId": "2017",
+        "serverDate": "2018-10-18T03:18:20.393Z",
+        "status": "offseason"
+    }
+}
