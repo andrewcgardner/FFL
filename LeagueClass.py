@@ -2,146 +2,160 @@ import pandas as pd
 import requests
 import json
 import getStats
+from sqlalchemy import create_engine
 
-class Matchup(object):
-    def __init__(self,matchups):
-        self.matchups = matchups
-        #self.boxscore = getBoxscore(self.matchups)
-
-
-class ScoringPeriod(object):
-    def __init__(self,schedule,scoringPeriodId):
-        self.schedule = schedule
-        self.scoringPeriodId = scoringPeriodId
-        self.matchups = self.getMatchups()
-        
-    def getMatchups(self):
-        pairings = []
-        for matchup in self.schedule['leagueSchedule']['scheduleItems'][self.scoringPeriodId - 1]['matchups']:
-            homeTeam = matchup['homeTeam']
-            awayTeam = matchup['awayTeam']
-            pairings.append([homeTeam['teamId'],awayTeam['teamId']])
-        
-        return pairings
-
-
-
-class Season(object):
-    def __init__(self,leagueId,year):
+class League(object):
+    def __init__(self,leagueId,seasonId):
         self.leagueId = leagueId
-        self.year = year
-        self.settings = self.basicAPI('leagueSettings')
-        self.teams = self.basicAPI('teams')
-        self.schedule = self.basicAPI('leagueSchedules')
-        self.scoringperiods = self.getScoringPeriods()
-        self.managers = self.getManagers()
-        
-        
-    def basicAPI(self,endpoint):
-        # .txt files to test at work
-        targetFile = "C:\\workspace\\python\\projects\\ESPN\\FFL\\leagueData\\" + endpoint + str(self.year) + ".txt"
-        with open(targetFile, 'r') as tF:
-            return json.load(tF)
+        self.seasonId = seasonId
     
-    # API Call for finalized process
-    """    
+    def extendAPI(self,endpoint,**kwargs):
         url = "http://games.espn.com/ffl/api/v2/" + endpoint
         params = {
             'leagueId': self.leagueId
-            ,'seasonId': self.year
+            ,'seasonId': self.seasonId
         }
+        for key in ['scoringPeriodId','teamId']:
+            if key in kwargs:
+                params[key] = kwargs.get(key)
         
         return requests.get(url,params=params,cookies=None).json()
-    """
-    def boxscoreAPI(self,scoringPeriodId,homeTeamId):
-        targetFile = "C:\\workspace\\python\\projects\\ESPN\\FFL\\boxscores\\" \
-            + str(self.year) \
-            + "-W" + str(scoringPeriodId) \
-            + "-T" + str(homeTeamId) \
-            + ".txt"
-        with open(targetFile, 'r') as tF:
-            return json.load(tF)
-    # API Call for finalized process
-    """   
-        url = "http://games.espn.com/ffl/api/v2/boxscore"
-        params = {
-            'leagueId': self.leagueId
-            ,'seasonId': self.year
-            ,'scoringPeriodId': scoringPeriodId
-            ,'teamId': homeTeamId
-        }
+        
+ 
+class Season(object):
+    def __init__(self,League):
+        self.leagueId = League.leagueId
+        self.seasonId = League.seasonId
     
-        return requests.get(url,params=params,cookies=None).json()
-    """
-
-    def getManagers(self):
-        teamIndex = list(range(0,len(self.teams['teams'])))
-        teamList = []
-        for index in teamIndex:
-            for d in self.teams['teams'][index]['owners']:
-                ownerList = [
-                    self.year
-                    ,self.teams['teams'][index]['teamId']
-                    ,d['firstName']
-                    ,d['lastName']
-                    ,d['firstName'] + ' ' + d['lastName']
-                    ,d['primaryOwner']
-                ]
-                
-                teamList.append(ownerList)
-
-        df = pd.DataFrame(teamList, columns=['season','teamId','firstName','lastName','fullName','isPrimary'])
-
-        primary = df[df['isPrimary']]
-        secondary = df[df['isPrimary'] == False]
-        outputcols = ['season','teamId','firstName','lastName','fullName']
-
-        final = pd.merge(
-            primary[outputcols]
-            ,secondary[outputcols]
-            ,how='left'
-            ,on=['season','teamId']
-            ,suffixes=('','.secondary')
-            )
-        return final
-
-
-    def getScoringPeriods(self):
+    def weeksComplete(self,schedule):
         week_nums = []
-
-        for item in self.schedule['leagueSchedule']['scheduleItems']:
+        for item in schedule['leagueSchedule']['scheduleItems']:
             outcomes = 0
             for sub in item['matchups']:
                 outcomes += sub['outcome']
             if outcomes > 0:
                 week_nums.append(item['matchupPeriodId'])
        
-        period_dict = {}
-        for week in week_nums:
-            period_dict[week] = ScoringPeriod(self.schedule,week)
+        return week_nums
+    
+    def getManagers(self,teams):
+        teamIndex = list(range(0,len(teams['teams'])))
+        teamList = []
+        for index in teamIndex:
+            for d in teams['teams'][index]['owners']:
+                ownerList = [
+                    int(self.seasonId)
+                    ,teams['teams'][index]['division']['divisionId']
+                    ,teams['teams'][index]['division']['divisionName']
+                    ,int(teams['teams'][index]['teamId'])
+                    ,teams['teams'][index]['teamAbbrev']
+                    ,teams['teams'][index]['teamLocation'] + ' ' + teams['teams'][index]['teamNickname']
+                    ,d['ownerId']
+                    ,d['firstName'] + ' ' + d['lastName']
+                    ,d['primaryOwner']
+                ]
+                
+                teamList.append(ownerList)
 
-        return period_dict
+        df = pd.DataFrame(teamList, columns = ['seasonId','divisionId','divisionName'
+                                            ,'teamId','teamAbbrev','teamName'
+                                            ,'ownerId','fullName','isPrimary'])
+
+        primary = df[df['isPrimary']]
+        secondary = df[df['isPrimary'] == False]
+        output_pri = [col for col in primary if col != 'isPrimary']
+        output_sec = ['seasonId','teamId','ownerId','fullName']
+
+        final = pd.merge(
+            primary[output_pri]
+            ,secondary[output_sec]
+            ,how='left'
+            ,on=['seasonId','teamId']
+            ,suffixes=('','.secondary')
+            )
         
-class League(object):
-    def __init__ (self,leagueId,seasonId,cookies=None):
+        return final    
+    
+class Week(object):
+    def __init__(self,Season,scoringPeriodId):
+        self.leagueId = Season.leagueId
+        self.seasonId = Season.seasonId
+        self.scoringPeriodId = scoringPeriodId
+            
+    def getMatchups(self,schedule):
+        ids = []
+        matchup_index = self.scoringPeriodId - 1
+        for matchup in schedule['leagueSchedule']['scheduleItems'][matchup_index]['matchups']:
+            homeTeam = matchup['homeTeam']
+            awayTeam = matchup['awayTeam']
+            ids.append([homeTeam['teamId'],awayTeam['teamId']])
+
+        return ids
+
+    def parseProGames(self,json):
+        games = pd.DataFrame.from_dict(json['progames']['games'])
+        games['date'], games['time'] = games['gameDate'].str.split('T').str
+        games['time'] = games['time'].str.split('.').str[0]
+        games['gameDate'] = pd.to_datetime(games['date'] + ' ' + games['time'])
+        games.drop(['date','time','status'],axis=1,inplace=True)
+        games.rename(columns={'gameId': 'proGameIds'},inplace=True)
+
+        return games
+
+class Model(object):
+    def __init__(self,leagueId,seasonId,serverAddress='localhost'):
         self.leagueId = leagueId
         self.seasonId = seasonId
-        self.season = Season(self.leagueId,self.seasonId)
+
+        pgsql = create_engine("postgresql://postgres:granite@" + serverAddress + ":5432/espn")
+
+        L = League(self.leagueId,self.seasonId)
         
-        """ ## logic to handle lists as well as ints ##
-        if self.seasonId.__class__.__name__ == 'list':
-            print('list')
-        else:
-            print(self.seasonId.__class__.__name__)
-        """
+        settings = L.extendAPI('leagueSettings')
+        schedule = L.extendAPI('leagueSchedules')
+        teams = L.extendAPI('teams')
+
+        S = Season(L)
+        weeks = S.weeksComplete(schedule)
+        managers = S.getManagers(teams)
         
+        for week_num in weeks:
+            W = Week(S,week_num)
+            matchups = W.getMatchups(schedule)
+            
+            progames_json = L.extendAPI(endpoint='proGames',scoringPeriodId=week_num)
+            progames = W.parseProGames(progames_json)
 
+            for match in matchups:
+            # Query the boxscore API endpoint and apply transformations
+                box_json = L.extendAPI(endpoint='boxscore',scoringPeriodId=week_num,teamId=match[0])
+                box_data = getStats.fullBox(box_json).reset_index()
+                
+            # Scoring Period information
+                box_data['lastRegularWeek'] = settings['leaguesettings']['finalRegularSeasonMatchupPeriodId']
+                box_data['lastPlayoffWeek'] = settings['leaguesettings']['finalScoringPeriodId']
 
-if __name__ == '__main__':
-    theFFL = League(123456,2018)
-    twenty_eighteen = theFFL.season
+            # Joining Manager table for additional metadata:
+                box_data = pd.merge(left=box_data
+                                    ,right=managers
+                                            ,how='left'
+                                            ,on=['teamId','seasonId'])
+            # Joining Manager table for opponent metadata:
+                box_data = pd.merge(left=box_data
+                                    ,right=managers
+                                            ,left_on=['opponentTeamId','seasonId']
+                                            ,right_on=['teamId','seasonId']
+                                            ,suffixes=['','.opponent'])
+            # Joining Progames table for additional metadata:
+                box_data = pd.merge(left=box_data
+                                    ,right=progames
+                                        ,how='left'
+                                        ,on='proGameIds')
+            # Publish data to PostgreSQL server
+                box_data.to_sql('etl_api_boxscore_data',pgsql,schema='fantasyfootball',if_exists='append',index=False)
 
-    for sched in twenty_eighteen.scoringperiods:
-        print(twenty_eighteen.scoringperiods[sched].scoringPeriodId, ': ', twenty_eighteen.scoringperiods[sched].matchups)
+if __name__=='__main__':
+    league = input("Enter ESPN Fantasy Football League ID: ")
+    year = input("Enter desired season: ")
+    Model(league,year)
     
-
