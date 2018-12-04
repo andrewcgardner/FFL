@@ -71,7 +71,7 @@ def fullBox(data):
 
         df = parseBox(team['slots'])
         
-        # ADD DATAPOINTS:
+        # APPLY ADDITIONAL DATAPOINTS:
         matchup = data['boxscore']['scheduleItems'][0]['matchups'][0]
 
         df['teamId'] = team['teamId']
