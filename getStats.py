@@ -26,18 +26,15 @@ def parseBox(json):
     ]
     # Projected and actual stats columns
     value_cols = [
-        col for col in df.columns if 'RealStats' in col
-            or 'ProjectedStats' in col
+        col for col in df.columns
+            if 'RealStats' in col or 'ProjectedStats' in col
+            if 'rawStats' not in col # Explicitly dropping raw statistics columns for the time being
     ]
     # Every column not included in the aforementioned lists
     cols_to_drop = [
         col for col in df.columns if col not in value_cols
             and col not in id_cols
     ]
-    # Explicitly dropping raw statistics columns for the time being
-    for col in df.columns:
-        if 'rawStats' in col:
-            cols_to_drop.append(col)
 
     df = df.drop(cols_to_drop,axis=1)
     
@@ -75,12 +72,17 @@ def fullBox(data):
         matchup = data['boxscore']['scheduleItems'][0]['matchups'][0]
 
         df['teamId'] = team['teamId']
-        if team['teamId'] == matchup['awayTeamId']:
-            df['opponentTeamId'] = matchup['homeTeamId']
-        else:
-            df['opponentTeamId'] = matchup['awayTeamId']
         df['homeTeamId'] = matchup['homeTeamId']
-        df['awayTeamId'] = matchup['awayTeamId']
+
+        if matchup['isBye']:
+            df['awayTeamId'] = 0
+            df['opponentTeamId'] = 0
+        else:
+            df['awayTeamId'] = matchup['awayTeamId']
+            if team['teamId'] == matchup['awayTeamId']:
+                df['opponentTeamId'] = matchup['homeTeamId']
+            else:
+                df['opponentTeamId'] = matchup['awayTeamId']
 
         df['seasonId'] = int(data['metadata']['seasonId'])
         df['scoringPeriodId'] = data['boxscore']['scoringPeriodId']
