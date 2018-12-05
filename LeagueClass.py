@@ -87,11 +87,11 @@ class Week(object):
         matchup_index = self.scoringPeriodId - 1
         for matchup in schedule['leagueSchedule']['scheduleItems'][matchup_index]['matchups']:
             homeTeam = matchup['homeTeam']
-        if matchup['isBye']:
-            ids.append([homeTeam['teamId'],0])
-        else:
-            awayTeam = matchup['awayTeam']
-            ids.append([homeTeam['teamId'],awayTeam['teamId']])
+            if matchup['isBye']:
+                ids.append([homeTeam['teamId'],0])
+            else:
+                awayTeam = matchup['awayTeam']
+                ids.append([homeTeam['teamId'],awayTeam['teamId']])
 
         return ids
 
