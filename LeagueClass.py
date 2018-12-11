@@ -98,8 +98,8 @@ class Week(object):
     def parseProGames(self,json):
         games = pd.DataFrame.from_dict(json['progames']['games'])
         games['date'], games['time'] = games['gameDate'].str.split('T').str
-        games['time'] = games['time'].str.split('.').str[0]
-        games['gameDate'] = pd.to_datetime(games['date'] + ' ' + games['time'])
+        games['gameTime'] = games['time'].str.split('.').str[0]
+        games['gameDate'] = pd.to_datetime(games['date'])
         games.drop(['date','time','status'],axis=1,inplace=True)
         games.rename(columns={'gameId': 'proGameIds'},inplace=True)
 
